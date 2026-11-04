@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico?v=20261031-tabfix3" sizes="any" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png?v=20261031-tabfix3">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png?v=20261031-tabfix3">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/goldbuilders-gb-emblem-apple.png?v=20261031-tabfix3">
+<meta name="theme-color" content="#0B0B0B">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Nexora — Complete Business Setup & Infrastructure</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f5f7ff',
+                            100: '#ebf0fe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                            950: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #e2e8f0;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(59, 130, 246, 0.25);
+        }
+        .modal-blur {
+            backdrop-filter: blur(12px);
+        }
+    
+        .gb-nexora-emblem{display:block;width:40px;height:36px;object-fit:contain;flex:0 0 auto}
+    </style>
+
+    <style id="mobile-readability-overrides">
+      .nexora-hero{background-image:linear-gradient(90deg,rgba(11,15,25,.96),rgba(11,15,25,.80)),url('https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&cs=tinysrgb&w=1800');background-size:cover;background-position:center}
+      @media(max-width:640px){
+        html{font-size:16px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+        body{font-size:16px;line-height:1.65}
+        body p,body li{font-size:1rem!important;line-height:1.65}
+        body [class*="text-xs"],body [class*="text-[10px]"],body [class*="text-[11px]"],body [class*="text-sm"]{font-size:.94rem!important;line-height:1.55}
+        body h1{font-size:clamp(2.25rem,9vw,3.1rem)!important;line-height:1.12!important}
+        body h2{line-height:1.2}
+        body label{font-size:1rem!important}
+        body input,body select,body textarea{font-size:16px!important;min-height:50px;padding:13px!important}
+        body button{font-size:1rem;min-height:48px}
+        .modal-blur{padding:12px}
+        #bookingModal{align-items:flex-start;overflow-y:auto;padding-top:12px;padding-bottom:12px}
+        #bookingModal>div{max-height:calc(100dvh - 24px);overflow-y:auto;margin:auto 0}
+      }
+    </style>
+
+<link rel="stylesheet" href="assets/css/ux-upgrade.css">
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-slate-950/70 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="sr-only">GoldBuilders Co. Packages</span>
+            <!-- Brand Logo -->
+            <a href="index.html" aria-label="Nexora — return to GoldBuilders Co." class="flex items-center gap-2 text-lg font-semibold tracking-tight text-white">
+                <img src="assets/images/goldbuilders-gb-emblem.png?v=20261031-brandfix2" alt="" aria-hidden="true" class="h-9 w-10 shrink-0 object-contain gb-nexora-emblem">
+                <span class="flex flex-col leading-tight">Nexora<span class="mt-1 text-[10px] font-medium tracking-wide text-slate-500">A GoldBuilders Co. solution</span></span>
+            </a>
+            
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#deliverables" class="hover:text-white transition-colors">12 Deliverables</a>
+                <a href="#packages" class="hover:text-white transition-colors">Packages</a>
+                <a href="#faqs" class="hover:text-white transition-colors">FAQs</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <button onclick="openBookingModal()" class="px-4 py-2 text-sm font-medium text-white bg-brand-600 hover:bg-brand-500 rounded-lg transition-all shadow-sm">
+                Book Setup Call
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="nexora-hero relative pt-20 pb-16 md:pt-32 md:pb-24 border-b border-slate-800/50 overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-brand-950 text-brand-500 border border-brand-900/50 mb-6">
+                <span class="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse"></span>
+                Done-For-You Business Setup Agency
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
+                We build, structure & automate your entire business system.
+            </h1>
+            <p class="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed">
+                From official CAC business registration to smart booking websites, CRM automation, 5 weekly marketing videos, and ad management—installed in under 21 days.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="scrollToSection('packages')" class="w-full sm:w-auto px-6 py-3.5 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-500 rounded-xl transition-all glow-effect">
+                    View Complete Packages & Pricing
+                </button>
+                <button onclick="openBookingModal()" class="w-full sm:w-auto px-6 py-3.5 text-base font-semibold text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 rounded-xl transition-all bg-slate-900/50 min-h-[50px]">
+                    Schedule Discovery Call
+                </button>
+                <a href="https://wa.me/2348022848749?text=Hello%20GoldBuilders%20Co.%2C%20I%20would%20like%20to%20discuss%20Nexora%20Business-In-A-Box%20and%20my%20business%20setup%20needs." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 text-base font-semibold text-white bg-emerald-700 hover:bg-emerald-600 rounded-xl transition-all min-h-[50px] inline-flex items-center justify-center gap-2" data-conversion-event="click_whatsapp">
+                    <span aria-hidden="true">●</span> WhatsApp Us Directly
+                </a>
+            </div>
+            
+            <!-- Quick Stat Bar -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-slate-800/60 text-left">
+                <div>
+                    <div class="text-2xl font-bold text-white">21 Days</div>
+                    <div class="text-xs text-slate-500 mt-1">Average Turnaround</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold text-white">100%</div>
+                    <div class="text-xs text-slate-500 mt-1">Client Digital Ownership</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold text-white">5 Videos/Wk</div>
+                    <div class="text-xs text-slate-500 mt-1">Short-Form Content Engine</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold text-white">GEO / AEO</div>
+                    <div class="text-xs text-slate-500 mt-1">AI Search Recognized</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Complete 12 Deliverables Matrix -->
+    <section id="deliverables" class="py-20 border-b border-slate-800/50 bg-slate-950/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-wider text-brand-500">12 Core Deliverables</h2>
+                <p class="text-3xl font-bold text-white mt-2">Everything Included In Your Setup</p>
+                <p class="text-slate-400 text-sm mt-3">We eliminate the hassle of hiring freelancers. Get your legal, web, CRM, video marketing, and ads handled in one system.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Business Registration -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center font-semibold mb-4">01</div>
+                    <h3 class="text-lg font-semibold text-white">1. CAC Business Registration</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Official business incorporation with CAC (Corporate Affairs Commission), TIN registration, and compliance setup.</p>
+                </div>
+
+                <!-- 2. Logo Creation -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-semibold mb-4">02</div>
+                    <h3 class="text-lg font-semibold text-white">2. Minimalist Logo Creation</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Professional primary, secondary, and mark logos with brand color palettes and typography kits.</p>
+                </div>
+
+                <!-- 3. Social Medias -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center font-semibold mb-4">03</div>
+                    <h3 class="text-lg font-semibold text-white">3. Social Media Setup & Integration</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Instagram, Facebook, TikTok, and LinkedIn channel setups with optimized bio structures and synced messaging.</p>
+                </div>
+
+                <!-- 4. Google Search -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-semibold mb-4">04</div>
+                    <h3 class="text-lg font-semibold text-white">4. Google Search & Local SEO</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Google Business Profile setup, local Map Pack optimization, and keyword targeting for organic search placement.</p>
+                </div>
+
+                <!-- 5. AI Search Recognition -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-semibold mb-4">05</div>
+                    <h3 class="text-lg font-semibold text-white">5. AI Search (GEO / AEO)</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Structured schema markup (JSON-LD) allowing ChatGPT, Perplexity, and Gemini to index and recommend your brand.</p>
+                </div>
+
+                <!-- 6. Professional Email -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center font-semibold mb-4">06</div>
+                    <h3 class="text-lg font-semibold text-white">6. Professional Domain Email</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Google Workspace / Zoho Mail configuration (e.g. name@brand.com) with SPF, DKIM, and DMARC security authentication.</p>
+                </div>
+
+                <!-- 7. Smart Website -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center font-semibold mb-4">07</div>
+                    <h3 class="text-lg font-semibold text-white">7. Smart Website & Onboarding</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">High-conversion website featuring interactive appointment calendars and intake forms connected directly to your CRM.</p>
+                </div>
+
+                <!-- 8. CRM Suite -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center font-semibold mb-4">08</div>
+                    <h3 class="text-lg font-semibold text-white">8. All-In-One Operations CRM</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Centralized pipeline for automated booking management, lead qualification forms, staff task rosters, and revenue tracking.</p>
+                </div>
+
+                <!-- 9. Content Marketing -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center font-semibold mb-4">09</div>
+                    <h3 class="text-lg font-semibold text-white">9. Content Marketing (5 Videos/Wk)</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Dedicated weekly short-form video content creation pipeline (Reels/TikTok/Shorts) designed to convert audience attention into leads.</p>
+                </div>
+
+                <!-- 10. Social Media Advert -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-orange-500/10 border border-orange-500/20 text-orange-400 flex items-center justify-center font-semibold mb-4">10</div>
+                    <h3 class="text-lg font-semibold text-white">10. Target Social Media Adverts</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Meta and Google ad account configuration, tracking pixel deployment, and lead campaign launch managed to your budget.</p>
+                </div>
+
+                <!-- 11. Business Structuring -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center font-semibold mb-4">11</div>
+                    <h3 class="text-lg font-semibold text-white">11. Business Structuring & SOPs</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Standard Operating Procedures, role assignments, and delegation systems engineered so the business runs without owner bottlenecks.</p>
+                </div>
+
+                <!-- 12. Scaling Architecture -->
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700/80 transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-400 flex items-center justify-center font-semibold mb-4">12</div>
+                    <h3 class="text-lg font-semibold text-white">12. Video SOP Library & Scaling</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Custom Loom video walkthroughs teaching your staff how to operate the CRM, edit web pages, handle leads, and scale operations.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages & Pricing Section -->
+    <section id="packages" class="py-20 border-b border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-wider text-brand-500">Transparent Investment</h2>
+                <p class="text-3xl font-bold text-white mt-2">Select Your Implementation Tier</p>
+                <p class="text-slate-400 text-sm mt-3">Choose the depth of operational infrastructure your enterprise requires.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
+                
+                <!-- Tier 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/30 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Tier 01</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Starter Infrastructure</h3>
+                        <p class="text-xs text-slate-400 mt-2">Legal setup, identity, domain email, payment handling, and master security vault.</p>
+                        
+                        <div class="mt-6">
+                            <span class="text-3xl font-bold text-white">₦1,000,000</span>
+                            <span class="text-xs text-slate-500 block mt-1">One-off setup fee</span>
+                        </div>
+
+                        <hr class="border-slate-800 my-6">
+
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> CAC Business Registration</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Minimalist Logo & Visual Identity</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Professional Email Setup</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Payment Gateway Integration</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Social Media Accounts Creation</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Password Vault & Access Setup</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="selectPackage('Starter Infrastructure')" class="w-full mt-8 py-3 text-xs font-semibold text-white bg-slate-800 hover:bg-slate-700 rounded-xl transition-all">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Tier 2 (Highlighted) -->
+                <div class="p-8 rounded-2xl bg-slate-900/90 border-2 border-brand-500 flex flex-col justify-between relative glow-effect">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 bg-brand-600 text-white text-[10px] uppercase font-bold tracking-widest rounded-full">Most Popular</span>
+                    <div>
+                        <span class="text-xs font-semibold text-brand-400 uppercase tracking-wider">Tier 02</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Growth & Visibility</h3>
+                        <p class="text-xs text-slate-400 mt-2">Web presence, Local Google SEO, AI Search (GEO), and initial video content.</p>
+                        
+                        <div class="mt-6">
+                            <span class="text-3xl font-bold text-white">₦2,500,000</span>
+                            <span class="text-xs text-slate-500 block mt-1">One-off setup fee</span>
+                        </div>
+
+                        <hr class="border-slate-800 my-6">
+
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Everything in Starter Infrastructure</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Custom High-Speed Website</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Google Business Profile & Local SEO</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> AI Search Recognition (GEO Schema)</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> 5 Videos/Week Content Batch (Month 1)</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Meta/Google Ad Setup & Launch</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="selectPackage('Growth & Visibility')" class="w-full mt-8 py-3 text-xs font-semibold text-white bg-brand-600 hover:bg-brand-500 rounded-xl transition-all">
+                        Select Growth Package
+                    </button>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/30 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Tier 03</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Enterprise Stack</h3>
+                        <p class="text-xs text-slate-400 mt-2">The complete operational stack across all 12 deliverables including full CRM and SOP library.</p>
+                        
+                        <div class="mt-6">
+                            <span class="text-3xl font-bold text-white">₦6,000,000</span>
+                            <span class="text-xs text-slate-500 block mt-1">One-off setup fee</span>
+                        </div>
+
+                        <hr class="border-slate-800 my-6">
+
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> All 12 Core Deliverables Included</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Integrated CRM (Bookings, Intake, Accounting)</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Staff Task Roster & Delegation System</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Smart Web Intake & Onboarding Integration</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Custom Video SOP Library (Loom Training)</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> 30-Day Post-Handover Tech Support</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="selectPackage('Enterprise Stack')" class="w-full mt-8 py-3 text-xs font-semibold text-white bg-slate-800 hover:bg-slate-700 rounded-xl transition-all">
+                        Select Enterprise Stack
+                    </button>
+                </div>
+
+                <!-- Tier 4: Custom Implementation -->
+                <div class="p-8 rounded-2xl bg-slate-900/50 border border-brand-500/60 ring-1 ring-brand-500/20 flex flex-col justify-between relative">
+                    <div class="absolute -top-3 left-6 px-3 py-1 rounded-full bg-brand-500 text-slate-950 text-[10px] font-bold uppercase tracking-wider">Built Around You</div>
+                    <div>
+                        <span class="text-xs font-semibold text-brand-400 uppercase tracking-wider">Tier 04</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Custom Implementation</h3>
+                        <p class="text-xs text-slate-400 mt-2">A tailored implementation for organizations with unique workflows, complex integrations or requirements beyond the standard tiers.</p>
+                        <div class="mt-6">
+                            <span class="text-2xl font-bold text-white">Custom Quote</span>
+                            <span class="text-xs text-slate-500 block mt-1">Scoped and priced after discovery</span>
+                        </div>
+                        <hr class="border-slate-800 my-6">
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-start gap-2"><span class="text-brand-500">✓</span><span>Discovery workshop and requirements mapping</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-500">✓</span><span>Tailored workflows, roles and approval paths</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-500">✓</span><span>Custom integrations, data migration or automation where agreed</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-500">✓</span><span>Phased delivery plan, milestones and acceptance criteria</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-500">✓</span><span>Optional training, change support and extended handover</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-500">✓</span><span>Clear scope, exclusions, timeline and investment proposal</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Custom Implementation')" class="w-full mt-8 py-3 text-xs font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl transition-all">Scope My Custom Solution</button>
+                </div>
+
+            </div>
+
+            <p class="text-center text-xs text-slate-500 mt-10">
+                *Payment Terms: 60% upfront commitment, 30% mid-project milestone, 10% upon final handover. Third-party subscriptions (CAC filings, software licenses, ad spend) are paid directly by the client.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-20 border-b border-slate-800/50 bg-slate-950/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-semibold uppercase tracking-wider text-brand-500">Clear Answers</h2>
+                <p class="text-2xl sm:text-3xl font-bold text-white mt-2">Frequently Asked Questions</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80">
+                    <h3 class="text-sm font-semibold text-white">How does the 5 videos per week content engine work?</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">We script, edit, and post 5 high-converting short-form videos per week (Instagram Reels, TikTok, YouTube Shorts) designed to highlight your services, client proof, and drive traffic directly to your smart web intake form.</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80">
+                    <h3 class="text-sm font-semibold text-white">How does the smart website connect to the CRM?</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">When a client books an appointment or fills out an intake form on your website, their details automatically sync to your CRM dashboard. Your team is immediately notified, an automated confirmation email/SMS is sent, and an invoice can be generated automatically.</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80">
+                    <h3 class="text-sm font-semibold text-white">Who owns the accounts and software created?</h3>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">You own 100% of all assets. Everything is registered under your business name. Upon project completion, we transfer all master login credentials via a secure password manager.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Footer -->
+    <footer class="py-16 text-center border-t border-slate-900">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Ready to structure your business?</h2>
+            <p class="text-slate-400 text-xs mt-3">Book a 20-minute strategy call to evaluate your current operations and plan your complete 21-day setup.</p>
+            <button onclick="openBookingModal()" class="mt-6 px-8 py-3.5 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-500 rounded-xl transition-all shadow-lg glow-effect">
+                Schedule Setup Consultation
+            </button>
+            <div class="mt-12 flex flex-col items-center gap-3 text-xs text-slate-600">
+                <a class="text-slate-400 hover:text-white transition-colors" href="index.html">← Back to GoldBuilders Co.</a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="referral-partner.html">Become a Referral Partner</a>
+                <span>Business setup and infrastructure by Nexora, within the GoldBuilders Co. growth platform.</span>
+                <span>&copy; 2026 Nexora. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 modal-blur">
+        <div class="relative w-full max-w-lg bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-sm p-1">
+                ✕
+            </button>
+
+            <div id="modalFormContainer">
+                <h3 class="text-xl font-bold text-white">Book Setup Call</h3>
+                <p class="text-xs text-slate-400 mt-1">Select your target package and fill out your information below.</p>
+
+                <form id="leadForm" onsubmit="handleFormSubmit(event)" class="mt-6 space-y-4">
+                    <div class="absolute -left-[10000px] h-px w-px overflow-hidden" aria-hidden="true"><label>Leave this field blank<input type="text" id="nexoraWebsite" name="website" tabindex="-1" autocomplete="off"></label></div>
+                    <div id="leadFormError" class="hidden rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 text-xs text-red-200" role="alert"></div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
+                        <input name="full_name" type="text" required maxlength="160" autocomplete="name" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500 transition-colors" placeholder="e.g. Tunde Balogun">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">Work Email</label>
+                        <input name="email" type="email" required maxlength="254" autocomplete="email" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500 transition-colors" placeholder="name@company.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">Phone / WhatsApp</label>
+                        <input name="phone" type="tel" required maxlength="80" autocomplete="tel" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500 transition-colors" placeholder="+234 800 000 0000">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">Target Package</label>
+                        <select id="packageSelect" name="package" required class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500 transition-colors">
+                            <option value="Starter Infrastructure">Starter Infrastructure (₦1,000,000)</option>
+                            <option value="Growth & Visibility" selected>Growth & Visibility (₦2,500,000)</option>
+                            <option value="Enterprise Stack">Enterprise Stack (₦6,000,000)</option>
+                            <option value="Custom Implementation">Custom Implementation (Custom Quote)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">Current Business Goals</label>
+                        <textarea name="goals" maxlength="5000" rows="3" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-500 transition-colors" placeholder="Tell us what you want to set up or transform. For custom implementation, include any special workflows, integrations, timeline or budget range..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-3 text-base font-semibold text-white bg-brand-600 hover:bg-brand-500 rounded-lg transition-all min-h-[50px]">
+                        Request Setup Consultation
+                    </button>
+                    <button type="button" onclick="sendNexoraWhatsApp()" class="w-full py-3 text-base font-semibold text-white bg-emerald-700 hover:bg-emerald-600 rounded-lg transition-all min-h-[50px] flex items-center justify-center gap-2">
+                        <span aria-hidden="true">●</span> Send Request Directly on WhatsApp
+                    </button>
+                    <p class="text-sm text-slate-400 leading-relaxed">WhatsApp opens with your details prefilled. Review and send the message yourself; this option does not save a website record.</p>
+                </form>
+            </div>
+
+            <div id="modalSuccessContainer" class="hidden text-center py-8">
+                <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">✓</div>
+                <h3 class="text-xl font-bold text-white">Consultation Request Received!</h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Our lead consultant will review your requirements and reach out via phone/WhatsApp within 24 hours.</p>
+                <button onclick="closeBookingModal()" class="mt-6 px-6 py-2.5 text-xs font-semibold text-white bg-slate-800 hover:bg-slate-700 rounded-lg transition-all">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client Script -->
+    <script>
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+            setTimeout(() => {
+                document.getElementById('modalFormContainer').classList.remove('hidden');
+                document.getElementById('modalSuccessContainer').classList.add('hidden');
+            }, 300);
+        }
+
+        function selectPackage(packageName) {
+            const selectElem = document.getElementById('packageSelect');
+            for(let i = 0; i < selectElem.options.length; i++) {
+                if(selectElem.options[i].value === packageName) {
+                    selectElem.selectedIndex = i;
+                    break;
+                }
+            }
+            openBookingModal();
+        }
+
+        function sendNexoraWhatsApp() {
+            const form = document.getElementById('leadForm');
+            if (!form.checkValidity()) { form.reportValidity(); return; }
+            const payload = {
+                full_name: form.elements.full_name.value.trim(),
+                email: form.elements.email.value.trim(),
+                phone: form.elements.phone.value.trim(),
+                package: form.elements.package.value,
+                goals: form.elements.goals.value.trim()
+            };
+            const message = [
+                'Hello GoldBuilders Co., I would like to request a Nexora setup consultation.', '',
+                `Name: ${payload.full_name}`, `Email: ${payload.email}`, `Phone / WhatsApp: ${payload.phone}`,
+                `Selected package: ${payload.package}`, '', 'Business goals / setup needs:', payload.goals || 'Not supplied', '',
+                'Please help me confirm the right scope, deliverables, timeline and next steps.'
+            ].join('\n');
+            window.open('https://wa.me/2348022848749?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+        }
+
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('leadForm');
+            const errorBox = document.getElementById('leadFormError');
+            const submitButton = form.querySelector('button[type="submit"]');
+            if (!form.checkValidity()) { form.reportValidity(); return; }
+            errorBox.classList.add('hidden');
+            const originalText = submitButton.textContent;
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting…';
+            const payload = {
+                full_name: form.elements.full_name.value.trim(),
+                email: form.elements.email.value.trim(),
+                phone: form.elements.phone.value.trim(),
+                package: form.elements.package.value,
+                goals: form.elements.goals.value.trim(),
+                website: form.elements.website.value.trim(),
+                referral_code: window.gbReferralCode?.() || ''
+            };
+            const requestController = new AbortController();
+            const requestTimeout = window.setTimeout(() => requestController.abort(), 15000);
+            try {
+                const response = await fetch('/api/nexora-leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify(payload),
+                    signal: requestController.signal
+                });
+                const result = await response.json().catch(() => ({}));
+                if (!response.ok) throw new Error(result.error || 'We could not save your request. Please try again.');
+                const successText = document.querySelector('#modalSuccessContainer p');
+                if (successText && result.notificationSent === false) {
+                    successText.textContent = 'Your request has been saved, but the email alert was not sent. The GoldBuilders team can still find your request in the admin dashboard.';
+                }
+                document.getElementById('modalFormContainer').classList.add('hidden');
+                document.getElementById('modalSuccessContainer').classList.remove('hidden');
+                form.reset();
+            } catch (error) {
+                // If the backend is unavailable (for example, the site was deployed as static HTML),
+                // offer a reliable WhatsApp handoff instead of leaving the visitor at a dead end.
+                const whatsappText = [
+                    'Hello GoldBuilders Co., I would like to request a Nexora setup consultation.',
+                    '',
+                    `Name: ${payload.full_name}`,
+                    `Email: ${payload.email}`,
+                    `Phone / WhatsApp: ${payload.phone}`,
+                    `Selected package: ${payload.package}`,
+                    '',
+                    'Business goals / setup needs:', payload.goals || 'Not supplied',
+                    '',
+                    'I started the request on the website but the online enquiry service did not confirm submission.'
+                ].join('\n');
+                const whatsappUrl = 'https://wa.me/2348022848749?text=' + encodeURIComponent(whatsappText);
+                errorBox.innerHTML = 'The website could not confirm your request. This usually means the online enquiry service is unavailable. Your details are still here, so please continue with WhatsApp: ' +
+                    '<a class="mt-2 inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-3 py-2 font-semibold text-white hover:bg-emerald-500" href="' + whatsappUrl + '" target="_blank" rel="noopener noreferrer">' +
+                    '<span aria-hidden="true">●</span> Continue on WhatsApp</a>';
+                errorBox.classList.remove('hidden');
+            } finally {
+                window.clearTimeout(requestTimeout);
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            }
+        }
+
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if(element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+<script src="assets/js/ux-upgrade.js" defer></script>
+<script src="assets/js/conversion-journey.js" defer></script>
+<script src="/assets/js/referral-attribution.js" defer></script></body>
+</html>

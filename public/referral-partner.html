@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.ico?v=20261031-tabfix3" sizes="any" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png?v=20261031-tabfix3">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/goldbuilders-gb-emblem-apple.png?v=20261031-tabfix3">
+<meta name="theme-color" content="#0B0B0B"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referral Partner Programme | GoldBuilders Co.</title>
+<meta name="description" content="Join the GoldBuilders referral partner network. Get your own unique code and trackable links for GoldBuilders Co., LuxeStreams, BeMore Coaching, Kohen ventures and YIELD Global Impact.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.rp{--rp-gold:#D4AF37;--rp-gold-l:#E7C85A;--rp-card:rgba(255,255,255,.045);--rp-line:rgba(212,175,55,.22);--rp-ok:#7ee0a0;--rp-err:#ff9d8e}
+.rp *{min-width:0}
+.rp h1,.rp h2,.rp h3{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
+.rp-wrap{width:min(1160px,92%);margin:0 auto}
+.rp-eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--rp-gold-l);font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.rp-eyebrow:before{content:"";width:28px;height:1px;background:var(--rp-gold)}
+.rp-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:13px 24px;border-radius:999px;border:1px solid var(--rp-gold);background:linear-gradient(135deg,#E7C85A,#C9A02C);color:#14110a;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s;font-size:1rem}
+.rp-btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(212,175,55,.28)}
+.rp-btn:focus-visible,.rp a:focus-visible,.rp button:focus-visible,.rp input:focus-visible,.rp select:focus-visible,.rp summary:focus-visible{outline:3px solid var(--rp-gold-l);outline-offset:2px}
+.rp-btn.ghost{background:transparent;color:var(--rp-gold-l)}
+.rp-btn.small{min-height:40px;padding:8px 16px;font-size:.88rem}
+.rp-btn[disabled]{opacity:.6;cursor:wait;transform:none}
+/* hero */
+.rp-hero{position:relative;padding:84px 0 70px;background:radial-gradient(900px 420px at 88% -5%,rgba(212,175,55,.22),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(212,175,55,.08),transparent 60%),#0B0B0B;overflow:hidden}
+.rp-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+.rp-hero h1{font-size:clamp(2.2rem,5vw,3.9rem);color:#fff;margin:16px 0 18px}
+.rp-hero h1 em{font-style:normal;color:var(--rp-gold)}
+.rp-lead{color:#d2cdc0;font-size:1.1rem;line-height:1.75;max-width:620px}
+.rp-cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 8px}
+.rp-fine{color:#a9a396;font-size:.85rem}
+.rp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.rp-stat{padding:14px 12px;border:1px solid var(--rp-line);border-radius:16px;background:var(--rp-card)}
+.rp-stat b{display:block;font-size:1.5rem;color:var(--rp-gold-l);font-family:'Playfair Display',serif}
+.rp-stat span{font-size:.78rem;color:#bdb7a8;line-height:1.35;display:block}
+.rp-mock{border:1px solid var(--rp-line);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.rp-mock-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}
+.rp-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;border:1px solid var(--rp-line);font-size:.72rem;font-weight:800;color:var(--rp-gold-l);background:rgba(212,175,55,.08)}
+.rp-mock-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.7rem;letter-spacing:.08em;color:#fff;margin:2px 0 14px}
+.rp-mock-link{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px 14px;border-radius:14px;background:#0d0d0d;border:1px solid rgba(255,255,255,.08);margin-top:10px;font-size:.82rem;color:#d8d2c4}
+.rp-mock-link span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rp-mock-link i{font-style:normal;font-size:.72rem;font-weight:800;color:#14110a;background:var(--rp-gold);padding:4px 9px;border-radius:999px;flex:none}
+/* sections */
+.rp-sec{padding:84px 0}
+.rp-sec.alt{background:#0f0f0f;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+.rp-sec h2{font-size:clamp(1.8rem,3.4vw,2.7rem);color:#fff;margin:12px 0 12px}
+.rp-sub{color:#c7c2b6;max-width:680px;line-height:1.7}
+.rp-types{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.rp-type{display:flex;flex-direction:column;gap:10px;padding:26px;border:1px solid var(--rp-line);border-radius:22px;background:var(--rp-card);transition:.2s}
+.rp-type:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.6)}
+.rp-ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(212,175,55,.12);border:1px solid var(--rp-line);font-size:1.3rem}
+.rp-type h3{font-size:1.3rem;color:#fff}
+.rp-type p{color:#c7c2b6;font-size:.94rem;line-height:1.65;flex:1}
+.rp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px;counter-reset:s}
+.rp-step{position:relative;padding:24px 20px;border:1px solid var(--rp-line);border-radius:20px;background:var(--rp-card)}
+.rp-step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--rp-gold);color:#14110a;font-weight:900;margin-bottom:14px}
+.rp-step h3{font-size:1.05rem;color:#fff;margin-bottom:6px;font-family:Inter,sans-serif;font-weight:700}
+.rp-step p{color:#bdb7a8;font-size:.88rem;line-height:1.6}
+/* join */
+.rp-join{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start;margin-top:34px}
+.rp-card{border:1px solid var(--rp-line);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));padding:30px}
+.rp-card h3{font-size:1.45rem;color:#fff;margin-bottom:6px}
+.rp-aside{position:sticky;top:96px;display:grid;gap:16px}
+.rp-list{list-style:none;display:grid;gap:11px;margin-top:14px}
+.rp-list li{display:flex;gap:10px;color:#d5d0c3;font-size:.94rem;line-height:1.55}
+.rp-list li:before{content:"✓";color:var(--rp-gold);font-weight:900;flex:none}
+.rp-fieldset{border:0;margin:20px 0 0;padding:0}
+.rp-legend,.rp-label{display:block;font-weight:700;font-size:.9rem;color:#f1ece0;margin-bottom:8px}
+.rp-grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-field{display:flex;flex-direction:column;margin-top:16px}
+.rp-field input[type=text],.rp-field input[type=email],.rp-field input[type=tel]{width:100%;min-height:50px;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:#0a0a0a;color:#fff;font-size:1rem}
+.rp-field input:focus{border-color:var(--rp-gold)}
+.rp-field input[aria-invalid=true]{border-color:var(--rp-err)}
+.rp-hint{font-size:.78rem;color:#9f9a8d;margin-top:5px}
+.rp-fe{font-size:.8rem;color:var(--rp-err);margin-top:5px;min-height:0}
+.rp-radios{display:grid;gap:10px}
+.rp-radio{position:relative;display:block;cursor:pointer}
+.rp-radio input{position:absolute;opacity:0}
+.rp-radio span{display:block;padding:14px 16px 14px 46px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:#0d0d0d;color:#e9e4d6;transition:.15s;position:relative}
+.rp-radio span:before{content:"";position:absolute;left:16px;top:17px;width:18px;height:18px;border-radius:50%;border:2px solid #7a7466}
+.rp-radio b{display:block;color:#fff}
+.rp-radio small{color:#aaa497;font-size:.8rem;line-height:1.45;display:block;margin-top:2px}
+.rp-radio input:checked+span{border-color:var(--rp-gold);background:rgba(212,175,55,.09)}
+.rp-radio input:checked+span:before{border-color:var(--rp-gold);background:radial-gradient(circle,var(--rp-gold) 45%,transparent 50%)}
+.rp-radio input:focus-visible+span{outline:3px solid var(--rp-gold-l);outline-offset:2px}
+.rp-chips{display:flex;flex-wrap:wrap;gap:9px}
+.rp-chipbox{position:relative}
+.rp-chipbox input{position:absolute;opacity:0}
+.rp-chipbox span{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:9px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:#0d0d0d;color:#ddd7c9;cursor:pointer;font-size:.9rem;font-weight:600;transition:.15s}
+.rp-chipbox input:checked+span{background:rgba(212,175,55,.16);border-color:var(--rp-gold);color:var(--rp-gold-l)}
+.rp-chipbox input:checked+span:before{content:"✓"}
+.rp-chipbox input:focus-visible+span{outline:3px solid var(--rp-gold-l);outline-offset:2px}
+.rp-consent{display:flex;gap:11px;align-items:flex-start;margin-top:20px;font-size:.88rem;color:#d0cabc;line-height:1.55}
+.rp-consent input{margin-top:4px;width:20px;height:20px;accent-color:#D4AF37;flex:none}
+.rp-status{margin-top:14px;font-size:.92rem;min-height:1.3em}
+.rp-status.err{color:var(--rp-err)}.rp-status.ok{color:var(--rp-ok)}
+.rp-hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+.rp-return{margin-top:18px;padding:18px;border-radius:18px;border:1px dashed var(--rp-line);background:rgba(255,255,255,.02)}
+.rp-return form{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.rp-return input{flex:1 1 180px;min-height:46px;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:#0a0a0a;color:#fff;text-transform:uppercase;letter-spacing:.06em}
+.rp-welcome{display:none;margin-bottom:18px;padding:14px 16px;border-radius:16px;border:1px solid var(--rp-line);background:rgba(212,175,55,.08);align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.rp-welcome.show{display:flex}
+/* results */
+.rp-results{display:none;margin-top:34px;scroll-margin-top:90px}
+.rp-results.show{display:block}
+.rp-codebar{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:26px;border-radius:24px;border:1px solid rgba(212,175,55,.55);background:linear-gradient(135deg,rgba(212,175,55,.16),rgba(255,255,255,.03))}
+.rp-codebar h3{font-size:1rem;font-family:Inter,sans-serif;font-weight:700;color:#d8d2c4;margin-bottom:4px}
+.rp-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:clamp(1.6rem,4vw,2.4rem);color:#fff;letter-spacing:.1em;line-height:1.2;word-break:break-all}
+.rp-status-pill{display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;font-size:.76rem;font-weight:800;background:rgba(255,200,80,.14);color:#ffd98a;border:1px solid rgba(255,200,80,.35)}
+.rp-status-pill.active{background:rgba(126,224,160,.12);color:var(--rp-ok);border-color:rgba(126,224,160,.4)}
+.rp-tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:26px 0 14px}
+.rp-search{flex:1 1 240px;min-height:48px;padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:#0a0a0a;color:#fff}
+.rp-tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.rp-tab{flex:none;min-height:42px;padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:#0d0d0d;color:#ddd7c9;font-weight:700;cursor:pointer;font-size:.86rem}
+.rp-tab[aria-pressed=true]{background:var(--rp-gold);border-color:var(--rp-gold);color:#14110a}
+.rp-links{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
+.rp-link{padding:16px;border-radius:18px;border:1px solid var(--rp-line);background:var(--rp-card);display:flex;flex-direction:column;gap:10px}
+.rp-link small{color:var(--rp-gold-l);font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.rp-link strong{color:#fff;font-size:1rem;line-height:1.35}
+.rp-url{width:100%;min-height:42px;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:#0a0a0a;color:#e8dfc6;font-size:.82rem}
+.rp-link-actions{display:flex;gap:8px;flex-wrap:wrap}
+.rp-empty{padding:30px;text-align:center;color:#aaa497;border:1px dashed var(--rp-line);border-radius:18px;grid-column:1/-1}
+.rp-note{margin-top:22px;padding:20px 22px;border-radius:18px;border:1px solid rgba(212,175,55,.3);background:rgba(212,175,55,.06);color:#d6d0c2;font-size:.9rem;line-height:1.65}
+.rp-note strong{color:var(--rp-gold-l)}
+/* faq */
+.rp-faq{display:grid;gap:12px;margin-top:30px;max-width:860px}
+.rp-faq details{border:1px solid var(--rp-line);border-radius:16px;background:var(--rp-card);padding:0 20px}
+.rp-faq summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:700;color:#fff;display:flex;justify-content:space-between;gap:14px}
+.rp-faq summary::-webkit-details-marker{display:none}
+.rp-faq summary:after{content:"+";color:var(--rp-gold);font-size:1.4rem;line-height:1}
+.rp-faq details[open] summary:after{content:"–"}
+.rp-faq p{color:#c7c2b6;padding:0 0 18px;line-height:1.7;font-size:.94rem}
+.rp-cta{margin-top:0;padding:48px 28px;text-align:center;border-radius:28px;border:1px solid rgba(212,175,55,.45);background:radial-gradient(600px 240px at 50% 0,rgba(212,175,55,.2),transparent 70%),#111}
+.rp-cta h2{margin-top:0}
+.rp-toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,30px);opacity:0;pointer-events:none;background:#1b1810;color:#f4e6bb;border:1px solid var(--rp-gold);padding:12px 20px;border-radius:999px;font-weight:700;z-index:2000;transition:.25s;max-width:90vw;text-align:center}
+.rp-toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:980px){.rp-hero-grid,.rp-join{grid-template-columns:1fr}.rp-aside{position:static}.rp-steps{grid-template-columns:repeat(2,1fr)}.rp-types{grid-template-columns:1fr}}
+@media(max-width:640px){.rp-hero{padding:56px 0 48px}.rp-sec{padding:58px 0}.rp-stats{grid-template-columns:repeat(2,1fr)}.rp-steps,.rp-links,.rp-grid2{grid-template-columns:1fr}.rp-card{padding:22px 18px}.rp-cta-row .rp-btn,.rp-link-actions .rp-btn{flex:1 1 100%}.rp-codebar{padding:20px}}
+.rp-results.show{padding-bottom:70px}
+@media(prefers-reduced-motion:reduce){.rp *{transition:none!important}}
+</style>
+</head>
+<body class="rp" data-page="referral-partner">
+<nav class="nav" aria-label="Primary navigation">
+<a class="logo brand-lockup" href="index.html"><img class="brand-emblem" src="assets/images/goldbuilders-gb-emblem.png?v=20261031-brandfix2" alt="" aria-hidden="true"><span class="brand-wordmark">GoldBuilders Co.</span></a>
+<button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+<div class="nav-links" data-nav-links>
+<a href="index.html" data-page="home">Home</a>
+<a href="about.html" data-page="about">About</a>
+<a href="services.html" data-page="services">Services</a>
+<a href="who-we-serve.html" data-page="who-we-serve">Who We Serve</a>
+<a href="programs.html" data-page="programs">Programs</a>
+<div class="nav-submenu" data-dropdown data-package-menu><button class="nav-submenu-toggle" type="button" aria-expanded="false" aria-controls="packages-menu">Packages <span class="chevron" aria-hidden="true">▼</span></button><div class="subsidiaries-menu packages-offer-menu" id="packages-menu" role="group" aria-label="Packages"><a href="./nexora.html">Nexora Business-in-a-box</a><a href="./services.html">Strategy and Transformation services</a><a href="./programs.html">Leadership and Talent Programs</a><a href="./executive-session.html">Executive Strategy Session</a></div></div>
+<div class="nav-submenu" data-dropdown data-subsidiaries-menu><button class="nav-submenu-toggle" type="button" aria-expanded="false" aria-controls="subsidiaries-menu">Subsidiaries <span class="chevron" aria-hidden="true">▼</span></button><div class="subsidiaries-menu subsidiaries-mega-menu" id="subsidiaries-menu" role="group" aria-label="Subsidiaries and initiatives"><section class="subsidiary-accordion" data-subsidiary-family><button class="subsidiary-family-toggle" type="button" data-subsidiary-toggle aria-expanded="false" aria-controls="subsidiary-children-goldbuilders">GoldBuilders Co. <span class="subsidiary-arrow" aria-hidden="true">▼</span></button><div class="subsidiary-children" id="subsidiary-children-goldbuilders" role="group" aria-label="GoldBuilders Co. initiatives"><a href="./index.html">GoldBuilders Co. Overview</a><a href="./subsidiaries/bemore.html">BeMore Coaching Company</a><a href="./program-bemore-coaching.html">BeMore Coaching Program</a></div></section><section class="subsidiary-accordion" data-subsidiary-family><button class="subsidiary-family-toggle" type="button" data-subsidiary-toggle aria-expanded="false" aria-controls="subsidiary-children-luxestreams">LuxeStreams <span class="subsidiary-arrow" aria-hidden="true">▼</span></button><div class="subsidiary-children" id="subsidiary-children-luxestreams" role="group" aria-label="LuxeStreams initiatives"><a href="./subsidiaries/luxestreams.html">LuxeStreams Concierge</a><a href="./subsidiaries/luxestreams-club.html">LuxeStreams Concierge Club</a></div></section><section class="subsidiary-accordion" data-subsidiary-family><button class="subsidiary-family-toggle" type="button" data-subsidiary-toggle aria-expanded="false" aria-controls="subsidiary-children-kohen">Kohen <span class="subsidiary-arrow" aria-hidden="true">▼</span></button><div class="subsidiary-children" id="subsidiary-children-kohen" role="group" aria-label="Kohen initiatives"><a href="./ecosystem/kohen.html">Kohen Overview</a><a href="./ecosystem/dirent-africa.html">DiRent Africa</a><a href="./ecosystem/skeelup-africa.html">SkeelUp Africa</a><a href="./ecosystem/clinbox.html">ClinBox / OctaCare</a><a href="./ecosystem/vendare.html">Vendare</a><a href="./ecosystem/integrius.html">Integrius</a><a href="./ecosystem/genie.html">gEnie</a><a href="./ecosystem/manajar.html">ManaJAR</a></div></section><section class="subsidiary-accordion" data-subsidiary-family><button class="subsidiary-family-toggle" type="button" data-subsidiary-toggle aria-expanded="false" aria-controls="subsidiary-children-yield">YIELD Global Impact <span class="subsidiary-arrow" aria-hidden="true">▼</span></button><div class="subsidiary-children" id="subsidiary-children-yield" role="group" aria-label="YIELD Global Impact initiatives"><a href="./ecosystem/yield-global-impact.html">YIELD Global Impact Overview</a><a href="./ecosystem/yield-global-fellowship.html">YIELD Global Fellowship</a><a href="./ecosystem/school-of-impact.html">School of Impact</a><a href="./ecosystem/next-community.html">Inspire Generation NEXT / NEXT Community</a><a href="./ecosystem/the-driven-life.html">The Driven Life / 10X Community</a><a href="./ecosystem/mentorship-matters.html">MentorshipMatters Bootcamp</a><a href="./ecosystem/wecare-foundation.html">WeCare Foundation</a><a href="./ecosystem/next-missions.html">Marketplace Ministry / NEXT Missions</a><a href="ecosystem/gei-trust.html">GEI Trust</a></div></section></div></div>
+<div class="nav-submenu" data-dropdown><button class="nav-submenu-toggle" type="button" aria-expanded="false">Explore <span class="chevron" aria-hidden="true">▼</span></button><div class="subsidiaries-menu explore-menu" role="group" aria-label="Explore GoldBuilders resources"><a href="industries.html">Industries</a><a href="executive-session.html">Executive Session</a><a href="partners.html">Partners</a><a href="resources.html">Resources</a><a href="case-studies.html">Case Studies</a><a href="insights.html">Insights</a><a href="blogs.html">Blogs</a><a href="ecosystem.html">Ecosystem Directory</a><a href="careers.html">Careers</a><a href="sitemap.html">Site Directory</a></div></div>
+<a href="contact.html" data-page="contact">Contact</a>
+</div>
+<a class="btn nav-cta" href="#join">Become a Partner</a>
+</nav>
+<main id="main">
+<header class="rp-hero"><div class="rp-wrap rp-hero-grid">
+  <div>
+    <span class="rp-eyebrow">GoldBuilders Ecosystem · Partner Network</span>
+    <h1>Share opportunities. <em>Earn with</em> the ecosystem.</h1>
+    <p class="rp-lead">Get your own unique partner code in under two minutes. Share trackable links to GoldBuilders Co., LuxeStreams, BeMore Coaching, Kohen ventures and YIELD Global Impact, built for affiliates, resellers and sales professionals.</p>
+    <div class="rp-cta-row"><a class="rp-btn" href="#join">Become a Referral Partner →</a><a class="rp-btn ghost" href="#join" data-focus-return>I already have a code</a></div>
+    <p class="rp-fine">Free to join. Pending review until approved; commission only under a signed agreement.</p>
+    <div class="rp-stats" aria-label="Programme highlights"><div class="rp-stat"><b>₦0</b><span>to join</span></div><div class="rp-stat"><b>49</b><span>offer-specific links</span></div><div class="rp-stat"><b>30 days</b><span>attribution window</span></div><div class="rp-stat"><b>1 code</b><span>for every offer</span></div></div>
+  </div>
+  <div class="rp-mock" aria-hidden="true">
+    <div class="rp-mock-top"><span class="rp-chip">● Partner dashboard preview</span><span class="rp-chip">Pending review</span></div>
+    <div class="rp-fine">Your unique code</div>
+    <div class="rp-mock-code">GBYOUR1A2B</div>
+    <div class="rp-mock-link"><span>yourdomain.com/r/GBYOUR1A2B?to=/subsidiaries/luxestreams.html</span><i>Copy</i></div>
+    <div class="rp-mock-link"><span>yourdomain.com/r/GBYOUR1A2B?to=/subsidiaries/bemore.html</span><i>Copy</i></div>
+    <div class="rp-mock-link"><span>yourdomain.com/r/GBYOUR1A2B?to=/services.html</span><i>Copy</i></div>
+  </div>
+</div></header>
+
+<section class="rp-sec" aria-labelledby="who-h"><div class="rp-wrap">
+  <span class="rp-eyebrow">Who it's for</span><h2 id="who-h">Three ways to partner.</h2>
+  <p class="rp-sub">Choose the model that fits how you already work. One code works across every offer.</p>
+  <div class="rp-types">
+    <article class="rp-type"><div class="rp-ico">📣</div><h3>Affiliate marketers</h3><p>Promote offers to your audience through social, email, content or communities, and share links that credit you.</p><a class="rp-btn ghost small" href="#join" data-pick="affiliate_marketer">Join as affiliate</a></article>
+    <article class="rp-type"><div class="rp-ico">🤝</div><h3>Resellers</h3><p>Source customers and coordinate sales under approved reseller terms across services and programmes.</p><a class="rp-btn ghost small" href="#join" data-pick="reseller">Join as reseller</a></article>
+    <article class="rp-type"><div class="rp-ico">🎯</div><h3>Sales professionals</h3><p>Independent sales representatives who develop and close opportunities for corporate and individual clients.</p><a class="rp-btn ghost small" href="#join" data-pick="sales_representative">Join as sales rep</a></article>
+  </div>
+</div></section>
+
+<section class="rp-sec alt" aria-labelledby="how-h"><div class="rp-wrap">
+  <span class="rp-eyebrow">How it works</span><h2 id="how-h">From sign-up to tracked lead in four steps.</h2>
+  <div class="rp-steps">
+    <div class="rp-step"><h3>Register</h3><p>Tell us who you are and which areas you want to promote.</p></div>
+    <div class="rp-step"><h3>Get your links</h3><p>Receive a unique code and a link for every service, programme and venture.</p></div>
+    <div class="rp-step"><h3>Share</h3><p>Send the link that fits your audience by WhatsApp, email or social.</p></div>
+    <div class="rp-step"><h3>We track and verify</h3><p>Enquiries from your link carry your code. The team validates every sale.</p></div>
+  </div>
+</div></section>
+
+<section class="rp-sec" id="join" aria-labelledby="join-h"><div class="rp-wrap">
+  <span class="rp-eyebrow">Get started</span><h2 id="join-h">Create your referral links.</h2>
+  <p class="rp-sub">No fee, no commitment. Submit your details and your links appear instantly.</p>
+
+  <div class="rp-welcome" id="rp-welcome"><span>Welcome back. Your code is <strong id="rp-welcome-code"></strong>.</span><button type="button" class="rp-btn small" id="rp-welcome-go">View my links</button></div>
+
+  <div class="rp-join">
+    <div class="rp-card" id="rp-form-card">
+      <h3>Partner application</h3>
+      <p class="rp-hint">Fields marked * are required.</p>
+      <form id="referral-register" novalidate>
+        <fieldset class="rp-fieldset"><legend class="rp-legend">How would you like to partner? *</legend>
+          <div class="rp-radios">
+            <label class="rp-radio"><input type="radio" name="partner_type" value="affiliate_marketer" required><span><b>Affiliate marketer</b><small>Promote offers and earn approved referral commission.</small></span></label>
+            <label class="rp-radio"><input type="radio" name="partner_type" value="reseller"><span><b>Reseller</b><small>Source customers and coordinate sales under reseller terms.</small></span></label>
+            <label class="rp-radio"><input type="radio" name="partner_type" value="sales_representative"><span><b>Independent sales representative</b><small>Develop and close sales opportunities.</small></span></label>
+          </div><div class="rp-fe" id="e-partner_type"></div>
+        </fieldset>
+        <div class="rp-grid2">
+          <div class="rp-field"><label class="rp-label" for="rp-name">Full name *</label><input id="rp-name" name="full_name" type="text" autocomplete="name" maxlength="150" required><div class="rp-fe" id="e-full_name"></div></div>
+          <div class="rp-field"><label class="rp-label" for="rp-email">Email *</label><input id="rp-email" name="email" type="email" autocomplete="email" maxlength="254" required><div class="rp-fe" id="e-email"></div></div>
+          <div class="rp-field"><label class="rp-label" for="rp-phone">Phone / WhatsApp *</label><input id="rp-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="40" required><div class="rp-fe" id="e-phone"></div></div>
+          <div class="rp-field"><label class="rp-label" for="rp-org">Organisation or social handle</label><input id="rp-org" name="organisation" type="text" maxlength="160" placeholder="Optional"></div>
+        </div>
+        <fieldset class="rp-fieldset"><legend class="rp-legend">Which areas will you promote? *</legend>
+          <div class="rp-chips">
+            <label class="rp-chipbox"><input type="checkbox" name="brands" value="GoldBuilders Co."><span>GoldBuilders Co.</span></label>
+            <label class="rp-chipbox"><input type="checkbox" name="brands" value="LuxeStreams"><span>LuxeStreams</span></label>
+            <label class="rp-chipbox"><input type="checkbox" name="brands" value="BeMore Coaching"><span>BeMore Coaching</span></label>
+            <label class="rp-chipbox"><input type="checkbox" name="brands" value="Kohen ventures"><span>Kohen ventures</span></label>
+            <label class="rp-chipbox"><input type="checkbox" name="brands" value="YIELD Global Impact"><span>YIELD Global Impact</span></label>
+          </div><div class="rp-fe" id="e-brands"></div>
+        </fieldset>
+        <label class="rp-consent"><input type="checkbox" name="consent" required><span>I consent to GoldBuilders using these details to review and administer my referral-partner application. *</span></label><div class="rp-fe" id="e-consent"></div>
+        <div class="rp-hp" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div style="margin-top:22px"><button class="rp-btn" type="submit" id="rp-submit" style="width:100%">Create my referral links →</button></div>
+        <div class="rp-status" id="rp-status" role="status" aria-live="polite"></div>
+        <p class="rp-hint">This is an application, not an employment offer, agency appointment or guarantee of commission.</p>
+      </form>
+    </div>
+
+    <aside class="rp-aside">
+      <div class="rp-card"><h3>What you get</h3>
+        <ul class="rp-list"><li>One permanent partner code for every offer</li><li>49 ready-made links across all five brands</li><li>Copy, WhatsApp and share buttons on every link</li><li>30-day attribution on supported enquiry forms</li><li>Transparent review by the GoldBuilders team</li></ul>
+      </div>
+      <div class="rp-card rp-return"><h3 style="font-size:1.1rem">Already registered?</h3><p class="rp-hint" style="margin:4px 0 0">Enter your code to get your links back.</p>
+        <form id="rp-return-form"><input id="rp-return-code" aria-label="Your partner code" placeholder="e.g. GBADA1B2C3" maxlength="18" autocomplete="off"><button class="rp-btn small" type="submit">Open my links</button></form>
+        <div class="rp-status" id="rp-return-status" role="status" aria-live="polite"></div>
+        <p class="rp-hint">Lost your code? Submit the form again with the same email and we show it to you.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="rp-results" id="my-links" aria-labelledby="links-h" tabindex="-1">
+    <div class="rp-codebar">
+      <div><h3 id="links-h">Your referral code</h3><div class="rp-code" id="rp-code">—</div><span class="rp-status-pill" id="rp-pill">Pending review</span></div>
+      <div class="rp-link-actions"><button class="rp-btn" type="button" id="rp-copy-code">Copy code</button><button class="rp-btn ghost" type="button" id="rp-share" hidden>Share main link</button></div>
+    </div>
+    <div class="rp-tools"><input class="rp-search" id="rp-search" type="search" placeholder="Search offers, e.g. cleaning, coaching, loans" aria-label="Search your links"><button class="rp-btn ghost small" type="button" id="rp-copy-all">Copy all shown</button></div>
+    <div class="rp-tabs" id="rp-tabs" role="group" aria-label="Filter by brand"></div>
+    <div class="rp-links" id="rp-links" aria-live="polite"></div>
+    <div class="rp-note"><strong>Commission and payment notice.</strong> Rates, qualifying products, payment timing, disputes, cancellations and tax documents are set by a separate Referral Partner Agreement. No commission is payable solely because a link is clicked or a lead is submitted. <strong>Credit and loan referrals</strong> are tracked for attribution only and are not commission-eligible unless the lending partnership and referral arrangement have all required regulatory approvals and a signed agreement.</div>
+  </section>
+</div></section>
+
+<section class="rp-sec alt" aria-labelledby="faq-h"><div class="rp-wrap">
+  <span class="rp-eyebrow">Questions</span><h2 id="faq-h">Good to know.</h2>
+  <div class="rp-faq">
+    <details><summary>What counts as a referral?</summary><p>An identifiable new prospect who enters through your link and submits a supported enquiry form. A sale becomes commission-eligible only after the company verifies the source, confirms the order and receives cleared payment under the approved agreement.</p></details>
+    <details><summary>How long does my link keep credit?</summary><p>Up to 30 days after a visitor clicks your link, subject to their browser settings.</p></details>
+    <details><summary>Do I need approval before I share links?</summary><p>You can share links straight away for attribution. Your status starts as Pending Review. Commission eligibility needs approval and a signed referral agreement.</p></details>
+    <details><summary>Is there a fee?</summary><p>No. Joining is free.</p></details>
+    <details><summary>I forgot my code. What now?</summary><p>Submit the form again with the same email address, or contact us and we will help.</p></details>
+  </div>
+</div></section>
+
+<section class="rp-sec"><div class="rp-wrap"><div class="rp-cta"><h2>Ready to grow with GoldBuilders?</h2><p class="rp-sub" style="margin:0 auto 22px">Join the partner network and get your links now.</p><a class="rp-btn" href="#join">Become a Referral Partner →</a><p class="rp-fine" style="margin-top:16px">Questions? <a href="mailto:info@goldbuilders.co" style="color:var(--rp-gold-l)">info@goldbuilders.co</a> · <a href="https://wa.me/2348022848749" target="_blank" rel="noopener" style="color:var(--rp-gold-l)">WhatsApp +234 802 284 8749</a></p></div></div></section>
+</main>
+<footer class="site-footer"><div class="container">
+<div class="grid-4 footer-grid">
+<div><h3 class="gold">GoldBuilders Co.</h3><p class="muted">Inspire • Initiate • Innovate</p><p class="muted" style="margin-top:12px">Building high-performance people, businesses and ecosystems through strategy, people, revenue and technology.</p><address class="footer-address">Plot 8 The Providence St, Lekki Phase I, Lekki 106104, Lagos</address></div>
+<div><h3 class="gold">Solutions</h3><a href="services.html">Strategy & Transformation</a><a href="services.html#people">HR & Leadership</a><a href="services.html#revenue">Revenue & Finance</a><a href="services.html#technology">Technology & Brand</a><a href="who-we-serve.html">Who We Serve</a><a href="corporate-organizations.html">Corporate Organizations</a><a href="government-institutions.html">Government & Institutions</a></div>
+<div><h3 class="gold">Programs & Packages</h3><a href="programs.html">All Programs</a><a href="program-executive-strategy.html">Executive Strategy Programs</a><a href="program-leadership-development.html">Leadership Development</a><a href="program-corporate-workshops.html">Corporate Workshops & Retreats</a><a href="program-talent-development.html">Talent Development</a><a href="program-bemore-coaching.html">BeMore Coaching</a><a href="skeelup-signup.html">SkeelUP Africa</a><a href="nexora.html">Nexora Business-In-A-Box</a></div>
+<div><h3 class="gold">Explore</h3><a href="executive-session.html">Executive Session</a><a href="partners.html">Partners</a><a href="resources.html">Resources</a><a href="assessment.html">Transformation Assessment</a><a href="case-studies.html">Case Studies</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="blogs.html">Blogs</a><a href="ecosystem.html">Ecosystem</a><a href="subsidiaries.html">Subsidiaries</a><a href="careers.html">Careers</a><a href="sitemap.html">Site Directory</a></div>
+</div>
+<div class="footer-bottom"><span>© <span id="year"></span> GoldBuilders Co. All rights reserved.</span><span>Strategy • People • Revenue • Technology</span><span><a href="contact.html">info@goldbuilders.co</a> · <a href="tel:+2348022848749">+234 8022848749</a></span></div>
+</div></footer>
+<div class="rp-toast" id="rp-toast" role="status" aria-live="polite"></div>
+<script src="assets/js/main.js"></script>
+<script>
+(function(){
+'use strict';
+const DEST=[["GoldBuilders Co.", "GoldBuilders Co. - Services", "/services.html"], ["GoldBuilders Co.", "Nexora Business-in-a-box", "/nexora.html"], ["GoldBuilders Co.", "Leadership & Talent Programmes", "/programs.html"], ["GoldBuilders Co.", "Executive Strategy Session", "/executive-session.html"], ["LuxeStreams", "LuxeStreams Concierge - All Services", "/subsidiaries/luxestreams.html"], ["LuxeStreams", "LuxeStreams Concierge Club", "/subsidiaries/luxestreams-club.html"], ["LuxeStreams", "LuxeStreams Logistics & One-off Pricing", "/subsidiaries/luxestreams.html#luxestreams-price-guide"], ["LuxeStreams", "Errands & Personal Assistance", "/subsidiaries/luxestreams.html#luxestreams-errands"], ["LuxeStreams", "Pickup, Delivery & Dispatch", "/subsidiaries/luxestreams.html#luxestreams-dispatch"], ["LuxeStreams", "Shopping & Procurement", "/subsidiaries/luxestreams.html#luxestreams-procurement"], ["LuxeStreams", "Standard Home Cleaning", "/subsidiaries/luxestreams.html#luxestreams-home-cleaning"], ["LuxeStreams", "Deep & Special Cleaning", "/subsidiaries/luxestreams.html#luxestreams-deep-cleaning"], ["LuxeStreams", "Office & Recurring Logistics", "/subsidiaries/luxestreams.html#luxestreams-office-logistics"], ["LuxeStreams", "Flight Booking Assistance", "/subsidiaries/luxestreams.html#luxestreams-flight-assistance"], ["LuxeStreams", "Hotels & Travel Planning", "/subsidiaries/luxestreams.html#luxestreams-hotels-travel"], ["LuxeStreams", "Visa & Airport Support", "/subsidiaries/luxestreams.html#luxestreams-visa-airport"], ["LuxeStreams", "Personal Concierge Retainer", "/subsidiaries/luxestreams.html#luxestreams-personal-concierge"], ["LuxeStreams", "Corporate Concierge Retainer", "/subsidiaries/luxestreams.html#luxestreams-corporate-concierge"], ["LuxeStreams", "Credit Consultation & Financing Support", "/subsidiaries/luxestreams.html#luxestreams-credit-pricing"], ["LuxeStreams", "Partner Lender Fee Disclosure Request", "/subsidiaries/luxestreams.html#luxestreams-credit-pricing"], ["BeMore Coaching", "BeMore Coaching Company - All Services", "/subsidiaries/bemore.html"], ["BeMore Coaching", "Personal & Career Coaching", "/subsidiaries/bemore.html#bemore-personal-coaching"], ["BeMore Coaching", "Executive & Leadership Coaching", "/subsidiaries/bemore.html#bemore-executive-coaching"], ["BeMore Coaching", "Career Mapping Series", "/subsidiaries/bemore.html#bemore-career-mapping"], ["BeMore Coaching", "Business Intelligence Mastermind", "/subsidiaries/bemore.html#bemore-bi-mastermind"], ["BeMore Coaching", "Career & Skills Cohort", "/subsidiaries/bemore.html#bemore-career-cohort"], ["BeMore Coaching", "THE ARIS 10X FRAMEWORK", "/subsidiaries/bemore.html#bemore-aris-10x"], ["BeMore Coaching", "Corporate Workshops", "/subsidiaries/bemore.html#bemore-corporate-workshops"], ["BeMore Coaching", "Corporate Retreats", "/subsidiaries/bemore.html#bemore-corporate-retreats"], ["BeMore Coaching", "Team & Workforce Performance", "/subsidiaries/bemore.html#bemore-workforce-performance"], ["BeMore Coaching", "Career Mapping & BI Memberships", "/program-bemore-coaching.html#bemore-memberships"], ["BeMore Coaching", "ARIS 10X Coaching Journey", "/program-bemore-coaching.html#aris-10x"], ["Kohen", "Kohen Portfolio", "/ecosystem/kohen.html"], ["Kohen", "DiRent Africa", "/ecosystem/dirent-africa.html"], ["Kohen", "SkeelUP Africa", "/ecosystem/skeelup-africa.html"], ["Kohen", "ClinBox / OctaCare", "/ecosystem/clinbox.html"], ["Kohen", "Vendare", "/ecosystem/vendare.html"], ["Kohen", "Integrius", "/ecosystem/integrius.html"], ["Kohen", "gEnie", "/ecosystem/genie.html"], ["Kohen", "ManaJAR", "/ecosystem/manajar.html"], ["YIELD Global Impact", "YIELD Global Impact", "/ecosystem/yield-global-impact.html"], ["YIELD Global Impact", "YIELD Global Fellowship", "/ecosystem/yield-global-fellowship.html"], ["YIELD Global Impact", "School of Impact", "/ecosystem/school-of-impact.html"], ["YIELD Global Impact", "NEXT Community", "/ecosystem/next-community.html"], ["YIELD Global Impact", "The Driven Life / 10X Community", "/ecosystem/the-driven-life.html"], ["YIELD Global Impact", "MentorshipMatters Bootcamp", "/ecosystem/mentorship-matters.html"], ["YIELD Global Impact", "WeCare Foundation", "/ecosystem/wecare-foundation.html"], ["YIELD Global Impact", "NEXT Missions", "/ecosystem/next-missions.html"], ["YIELD Global Impact", "GEI Trust", "/ecosystem/gei-trust.html"]];
+const $=s=>document.querySelector(s);
+const toast=m=>{const t=$('#rp-toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),2200);};
+const form=$('#referral-register'),statusEl=$('#rp-status');
+const BRANDS=['All',...new Set(DEST.map(d=>d[0]))];
+let state={code:'',status:'',brand:'All',q:''};
+const base=()=>location.protocol.startsWith('http')?location.origin:'';
+const link=p=>`${base()}/r/${encodeURIComponent(state.code)}?to=${encodeURIComponent(p)}`;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function copy(text,msg){try{await navigator.clipboard.writeText(text);}catch(_){const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');}catch(e){}t.remove();}toast(msg||'Copied');}
+function setErr(id,msg){const e=$('#e-'+id);if(e)e.textContent=msg||'';const i=form.querySelector(`[name="${id}"]`);if(i&&i.type!=='radio'&&i.type!=='checkbox')i.setAttribute('aria-invalid',msg?'true':'false');}
+function validate(){
+  let first=null;const bad=(id,msg,el)=>{setErr(id,msg);if(msg&&!first)first=el||form.querySelector(`[name="${id}"]`);};
+  bad('partner_type',form.partner_type.value?'':'Choose how you would like to partner.',form.querySelector('[name=partner_type]'));
+  bad('full_name',form.full_name.value.trim()?'':'Enter your full name.');
+  bad('email',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.value.trim())?'':'Enter a valid email address.');
+  bad('phone',form.phone.value.replace(/\D/g,'').length>=7?'':'Enter a phone or WhatsApp number (at least 7 digits).');
+  bad('brands',form.querySelector('[name=brands]:checked')?'':'Choose at least one area to promote.',form.querySelector('[name=brands]'));
+  bad('consent',form.consent.checked?'':'Please tick to consent so we can process your application.',form.consent);
+  if(first){first.focus();first.scrollIntoView({block:'center',behavior:'smooth'});}
+  return !first;
+}
+form.addEventListener('input',e=>{if(e.target.name)setErr(e.target.name,'');});
+form.addEventListener('change',e=>{if(e.target.name==='brands')setErr('brands','');if(e.target.name==='partner_type')setErr('partner_type','');});
+document.querySelectorAll('[data-pick]').forEach(a=>a.addEventListener('click',()=>{const r=form.querySelector(`[name=partner_type][value="${a.dataset.pick}"]`);if(r)r.checked=true;setErr('partner_type','');setTimeout(()=>$('#rp-name').focus({preventScroll:true}),500);}));
+document.querySelectorAll('[data-focus-return]').forEach(a=>a.addEventListener('click',()=>setTimeout(()=>$('#rp-return-code').focus({preventScroll:true}),500)));
+
+function show(code,status,type){
+  state.code=code;state.status=status||'Pending Review';
+  $('#rp-code').textContent=code;
+  const pill=$('#rp-pill');pill.textContent=state.status;pill.classList.toggle('active',/active/i.test(state.status));
+  try{localStorage.setItem('gb_partner_code',code);}catch(_){}
+  $('#rp-tabs').innerHTML=BRANDS.map(b=>`<button type="button" class="rp-tab" data-b="${esc(b)}" aria-pressed="${b===state.brand}">${esc(b)}</button>`).join('');
+  if(navigator.share)$('#rp-share').hidden=false;
+  renderLinks();
+  const r=$('#my-links');r.classList.add('show');
+  setTimeout(()=>{r.scrollIntoView({behavior:'smooth',block:'start'});r.focus({preventScroll:true});},60);
+}
+function visible(){const q=state.q.trim().toLowerCase();return DEST.filter(d=>(state.brand==='All'||d[0]===state.brand)&&(!q||(d[1]+' '+d[0]).toLowerCase().includes(q)));}
+function renderLinks(){
+  const list=visible();
+  $('#rp-links').innerHTML=list.length?list.map((d,i)=>{const u=link(d[2]);return `<div class="rp-link"><small>${esc(d[0])}</small><strong>${esc(d[1])}</strong><input class="rp-url" readonly value="${esc(u)}" aria-label="Referral link for ${esc(d[1])}" onfocus="this.select()"><div class="rp-link-actions"><button type="button" class="rp-btn small" data-copy="${i}">Copy link</button><a class="rp-btn ghost small" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(d[1]+' · '+u)}">WhatsApp</a><a class="rp-btn ghost small" target="_blank" rel="noopener" href="${esc(u)}">Preview</a></div></div>`;}).join(''):'<div class="rp-empty">No offers match your search.</div>';
+}
+$('#rp-tabs').addEventListener('click',e=>{const b=e.target.closest('[data-b]');if(!b)return;state.brand=b.dataset.b;$('#rp-tabs').querySelectorAll('.rp-tab').forEach(t=>t.setAttribute('aria-pressed',t===b));renderLinks();});
+$('#rp-search').addEventListener('input',e=>{state.q=e.target.value;renderLinks();});
+$('#rp-links').addEventListener('click',e=>{const b=e.target.closest('[data-copy]');if(!b)return;copy(link(visible()[+b.dataset.copy][2]),'Link copied');});
+$('#rp-copy-code').addEventListener('click',()=>copy(state.code,'Code copied'));
+$('#rp-copy-all').addEventListener('click',()=>copy(visible().map(d=>`${d[1]}: ${link(d[2])}`).join('\n'),'All shown links copied'));
+$('#rp-share').addEventListener('click',()=>{navigator.share({title:'GoldBuilders',text:'Take a look at GoldBuilders Co.',url:link('/')}).catch(()=>{});});
+
+form.addEventListener('submit',async e=>{
+  e.preventDefault();statusEl.className='rp-status';statusEl.textContent='';
+  if(!validate())return;
+  if(!location.protocol.startsWith('http')){statusEl.className='rp-status err';statusEl.textContent='Open this page from your website address (not as a file on your computer) to register.';return;}
+  const btn=$('#rp-submit');btn.disabled=true;const label=btn.textContent;btn.textContent='Creating your links…';
+  try{
+    const payload={full_name:form.full_name.value.trim(),email:form.email.value.trim(),phone:form.phone.value.trim(),organisation:form.organisation.value.trim(),partner_type:form.partner_type.value,brands:[...form.querySelectorAll('[name=brands]:checked')].map(x=>x.value),consent:form.consent.checked,website:form.website.value.trim()};
+    const r=await fetch('/api/referrals/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    let d;try{d=await r.json();}catch(_){throw new Error('The registration service is not reachable right now. Please try again shortly or email info@goldbuilders.co.');}
+    if(!r.ok||!d.ok)throw new Error(d.error||'We could not create your partner record. Please check your details and try again.');
+    statusEl.className='rp-status ok';statusEl.textContent=d.existing?'We found your existing partner record.':'Application saved. Your links are ready below.';
+    show(d.code,d.status,d.partner_type);
+  }catch(err){statusEl.className='rp-status err';statusEl.textContent=err.message;}
+  finally{btn.disabled=false;btn.textContent=label;}
+});
+
+async function openByCode(raw,out){
+  const code=String(raw||'').trim().toUpperCase();
+  if(!/^[A-Z0-9]{6,18}$/.test(code)){out.className='rp-status err';out.textContent='Enter the code exactly as we gave it (letters and numbers).';return;}
+  out.className='rp-status';out.textContent='Checking…';
+  try{
+    const r=await fetch('/api/referrals/lookup?code='+encodeURIComponent(code));const d=await r.json();
+    if(!r.ok||!d.ok)throw new Error(d.error||'We could not find that code.');
+    out.textContent='';show(d.code,d.status,d.partner_type);
+  }catch(err){out.className='rp-status err';out.textContent=err.message==='Failed to fetch'?'The service is not reachable right now. Please try again shortly.':err.message;}
+}
+$('#rp-return-form').addEventListener('submit',e=>{e.preventDefault();openByCode($('#rp-return-code').value,$('#rp-return-status'));});
+try{const saved=localStorage.getItem('gb_partner_code');if(saved&&/^[A-Z0-9]{6,18}$/.test(saved)){$('#rp-welcome-code').textContent=saved;$('#rp-welcome').classList.add('show');$('#rp-return-code').value=saved;$('#rp-welcome-go').addEventListener('click',()=>openByCode(saved,$('#rp-return-status')));}}catch(_){}
+if(new URLSearchParams(location.search).get('invalid')==='1'){statusEl.className='rp-status err';statusEl.textContent='That referral code was not recognised. Register below to get a new one.';}
+})();
+</script>
+</body></html>

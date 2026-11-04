@@ -1,0 +1,43 @@
+/* GoldBuilders conversion journey — additive UI, responsive and accessible */
+:root{--gb-conv-gold:#D4AF37;--gb-conv-soft:#F0D77B;--gb-conv-line:rgba(212,175,55,.27)}
+.conversion-section{position:relative;isolation:isolate}
+.conversion-heading{max-width:840px;margin:0 auto 28px;text-align:center}
+.conversion-heading p{color:#bdbdbd;max-width:700px;margin:12px auto 0;line-height:1.7}
+.conversion-eyebrow{color:var(--gb-conv-soft);font-size:.8rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.solution-finder{border:1px solid var(--gb-conv-line);border-radius:24px;padding:clamp(20px,3.2vw,36px);background:radial-gradient(circle at 100% 0,rgba(212,175,55,.11),transparent 36%),linear-gradient(145deg,#111,#080808)}
+.solution-finder h2{color:#fff;font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.7vw,2.55rem);line-height:1.15;margin:8px 0 12px}
+.solution-finder p{color:#bcbcbc;line-height:1.7}
+.solution-finder .finder-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.solution-finder label{display:block;color:#ececec;font-weight:700;margin-bottom:8px;font-size:.95rem}
+.solution-finder select{width:100%;min-height:50px;border:1px solid #424242;border-radius:12px;background:#171717;color:#fff;padding:12px 14px;font:inherit;font-size:16px}
+.solution-finder .finder-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:20px}
+.solution-finder .finder-result{display:none;margin-top:22px;border:1px solid rgba(212,175,55,.34);border-radius:16px;padding:20px;background:rgba(212,175,55,.055)}
+.solution-finder .finder-result.is-visible{display:block}
+.solution-finder .finder-result h3{color:var(--gb-conv-soft);font-size:1.2rem;margin:0 0 8px}
+.solution-finder .finder-result p{margin:0 0 15px}
+.work-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+.work-step{padding:24px;border:1px solid #292929;border-radius:18px;background:#0d0d0d}
+.work-step .step-number{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;background:rgba(212,175,55,.12);border:1px solid var(--gb-conv-line);color:var(--gb-conv-soft);font-weight:900;margin-bottom:15px}
+.work-step h3{color:#fff;font-size:1.16rem;margin-bottom:8px}
+.work-step p{color:#b7b7b7;line-height:1.65;margin:0}
+.proof-note{padding:18px 20px;border:1px solid rgba(212,175,55,.28);border-left:4px solid var(--gb-conv-gold, #D4AF37);background:#111;border-radius:12px;color:#d0d0d0;line-height:1.65;margin-bottom:22px}
+.blueprint-card{display:flex;flex-direction:column;height:100%}
+.blueprint-card .blueprint-tag{display:inline-flex;align-self:flex-start;margin-bottom:13px;padding:5px 9px;border:1px solid var(--gb-conv-line);border-radius:999px;color:var(--gb-conv-soft);font-size:.76rem;font-weight:800;letter-spacing:.04em}
+.blueprint-card .card-link{margin-top:auto}
+.booking-preference{padding:13px 15px;border:1px solid #363636;border-radius:12px;background:#0c0c0c;color:#bdbdbd;font-size:.9rem;line-height:1.55;margin-top:10px}
+.booking-preference strong{color:var(--gb-conv-soft)}
+.assessment-progress{display:flex;align-items:center;gap:14px;margin:20px 0 24px}
+.assessment-progress-track{flex:1;height:8px;border-radius:999px;background:#303030;overflow:hidden}
+.assessment-progress-fill{display:block;width:0;height:100%;background:linear-gradient(90deg,#9f7b11,var(--gb-conv-soft));transition:width .2s ease}
+.assessment-progress-text{min-width:152px;color:#c9c9c9;font-size:.88rem;text-align:right;font-variant-numeric:tabular-nums}
+.assessment-hint{font-size:.92rem;color:#aaa;line-height:1.55;margin:7px 0 0}
+.result-action-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.result-action-row .btn,.result-action-row .secondary-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;cursor:pointer}
+body[data-page="contact"] .page-hero,body[data-page="assessment"] .page-hero,body[data-page="assessment-result"] .page-hero,body[data-page="executive-session"] .page-hero{background-image:linear-gradient(90deg,rgba(6,6,6,.96) 0%,rgba(7,7,7,.83) 66%,rgba(7,7,7,.70) 100%),url('https://images.pexels.com/photos/7652055/pexels-photo-7652055.jpeg?auto=compress&cs=tinysrgb&w=1400');background-size:cover;background-position:center 42%}
+body[data-page="services"] .page-hero,body[data-page="who-we-serve"] .page-hero{background-image:linear-gradient(90deg,rgba(6,6,6,.96) 0%,rgba(7,7,7,.83) 66%,rgba(7,7,7,.70) 100%),url('https://images.pexels.com/photos/30689114/pexels-photo-30689114/free-photo-of-team-collaboration-meeting-in-lagos-office.jpeg?auto=compress&dpr=1&h=1000&w=1400');background-size:cover;background-position:center 42%}
+body[data-page="corporate-organizations"] .page-hero,body[data-page="government-institutions"] .page-hero{background-image:linear-gradient(90deg,rgba(6,6,6,.96) 0%,rgba(7,7,7,.83) 66%,rgba(7,7,7,.70) 100%),url('https://images.pexels.com/photos/7652055/pexels-photo-7652055.jpeg?auto=compress&cs=tinysrgb&w=1400');background-size:cover;background-position:center}
+body[data-page="nexora-solutions"] .page-hero{background-image:linear-gradient(90deg,rgba(6,6,6,.96) 0%,rgba(7,7,7,.84) 66%,rgba(7,7,7,.70) 100%),url('https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&cs=tinysrgb&w=1400');background-size:cover;background-position:center}
+@media(max-width:1000px){.pathways-mini{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.solution-finder .finder-fields,.work-steps{grid-template-columns:1fr}.assessment-progress{align-items:flex-start;flex-direction:column;gap:8px}.assessment-progress-text{text-align:left;min-width:0}.result-action-row{flex-direction:column;align-items:stretch}.result-action-row .btn,.result-action-row .secondary-btn{width:100%}}
+@media(max-width:420px){.solution-finder{border-radius:18px}.solution-finder .finder-actions{align-items:stretch;flex-direction:column}}
+@media print{body{background:#fff!important;color:#111!important;font-size:11pt!important;line-height:1.45!important}.nav,.site-footer,.gb-image-carousel,.global-wa-cta,.result-action-row,.cta,.menu-toggle,.nav-cta{display:none!important}body[data-page="assessment-result"] main{background:#fff!important}body[data-page="assessment-result"] .page-hero,body[data-page="assessment-result"] .section,body[data-page="assessment-result"] .section-tight{padding:12px 0!important;background:#fff!important;color:#111!important;break-inside:avoid}body[data-page="assessment-result"] h1,body[data-page="assessment-result"] h2,body[data-page="assessment-result"] h3,body[data-page="assessment-result"] p,body[data-page="assessment-result"] strong,body[data-page="assessment-result"] li,body[data-page="assessment-result"] .muted,body[data-page="assessment-result"] .gold{color:#111!important}body[data-page="assessment-result"] .panel,body[data-page="assessment-result"] .result-dim{background:#fff!important;border:1px solid #ccc!important;box-shadow:none!important}body[data-page="assessment-result"] .result-meter{border:1px solid #777!important}}

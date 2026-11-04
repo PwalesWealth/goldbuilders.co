@@ -1,0 +1,12 @@
+/* The Growth Lab channel panel on The Driven Life page */
+.growth-lab-section .feature{align-items:stretch;gap:clamp(22px,4vw,48px)}
+.growth-lab-panel{height:100%;border-color:rgba(201,154,46,.35)}
+.growth-lab-points{display:grid;gap:0}
+.growth-lab-points article{padding:15px 0;border-bottom:1px solid rgba(201,154,46,.22)}
+.growth-lab-points article:last-child{border-bottom:0}
+.growth-lab-points strong{color:var(--gold);display:block;margin-bottom:5px}
+.growth-lab-points p{color:var(--muted);margin:0}
+.growth-lab-button{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+.growth-lab-button span{font-size:1.12em}
+.growth-lab-note{margin-top:12px;max-width:650px}
+@media(max-width:720px){.growth-lab-button{width:100%;justify-content:center;text-align:center}.growth-lab-section .feature{grid-template-columns:1fr}}

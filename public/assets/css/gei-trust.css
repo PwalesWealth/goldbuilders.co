@@ -1,0 +1,10 @@
+/* GEI Trust page and directory cards — dark GoldBuilders theme */
+.gei-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.gei-card{background:linear-gradient(145deg,#171714 0%,#10100f 100%);color:#f3f0e8;border:1px solid rgba(212,175,55,.28);border-radius:16px;padding:22px;height:100%;box-shadow:0 14px 34px rgba(0,0,0,.24)}
+.gei-card h3{margin-top:8px;color:#e7c85a}
+.gei-card p,.gei-card li{color:#d8d5cc}
+.gei-card strong{color:#f2dfaa}
+.gei-card .gei-kicker,.gei-card .price{color:#e7c85a}
+.gei-card .secondary-btn{color:#f5e7c7;border-color:rgba(212,175,55,.62);background:rgba(212,175,55,.045)}
+.gei-card .secondary-btn:hover{color:#fff;background:rgba(212,175,55,.14)}
+.gei-card:focus-within{outline:2px solid #e7c85a;outline-offset:3px}

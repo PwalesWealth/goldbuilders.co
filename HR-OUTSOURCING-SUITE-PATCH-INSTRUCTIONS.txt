@@ -1,0 +1,15 @@
+GOLDBUILDERS CO. — HR OUTSOURCING SUITE PATCH
+
+Files in this patch:
+- public/services.html
+- public/nexora-solutions.html
+- HR-OUTSOURCING-SUITE-UPDATE.md
+
+Installation:
+1. Back up your current application files.
+2. Extract this patch into the application root (the folder containing server.js).
+3. Merge the included public folder and allow the two HTML files to overwrite the existing versions.
+4. Do not replace .env, the production database, server.js, or other application configuration.
+5. Clear the browser cache and reopen services.html. Test the HR & Leadership section and open nexora-solutions.html?solution=people.
+
+The patch is content-only. It requires no npm installation, server change, environment update or database migration. Existing consultation / WhatsApp flow is retained.

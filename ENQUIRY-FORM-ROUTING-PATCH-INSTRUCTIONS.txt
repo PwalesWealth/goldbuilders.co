@@ -1,0 +1,17 @@
+GOLDBUILDERS ENQUIRY FORM ROUTING PATCH
+
+1. Back up your current application files and database.
+2. Extract this ZIP into the application root (the folder containing server.js).
+3. Merge/overwrite the included files and preserve the included public/ folder structure.
+4. Do NOT overwrite .env or data/goldbuilders.db.
+5. Restart the Node.js application.
+6. Test these routes:
+   - /contact.html (general enquiry by default)
+   - /contact.html?type=consultation
+   - /contact.html?type=partnership
+   - /contact.html?type=programme
+   - /contact.html?type=product
+   - /partners.html, then click Start Partnership Conversation
+7. Submit one test enquiry in each category and confirm the type/interest appears in the admin dashboard.
+
+The SQLite database migration is automatic and additive. No existing lead records are deleted.

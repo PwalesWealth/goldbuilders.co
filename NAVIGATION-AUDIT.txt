@@ -1,0 +1,15 @@
+GoldBuilders website navigation audit — corrected information architecture
+
+Packages (separate menu; offers only):
+- Nexora Business-in-a-box
+- Strategy and Transformation services
+- Leadership and Talent Programs
+- Executive Strategy Session
+
+Subsidiaries (separate menu; each parent is a click-to-expand accordion):
+- GoldBuilders Co. → overview, BeMore Coaching Company, BeMore Coaching Program
+- LuxeStreams → concierge overview, Concierge Club
+- Kohen → DiRent Africa, SkeelUp Africa, ClinBox / OctaCare, Vendare, Integrius, gEnie, ManaJAR
+- YIELD Global Impact → YIELD Global Fellowship, School of Impact, NEXT Community, The Driven Life / 10X Community, WeCare Foundation, NEXT Missions, LeaderSHIFT
+
+All 57 pages with the shared primary navigation contain both menus. Mobile navigation collapses the Packages menu to one column and shows Subsidiaries as an accordion with four tappable expandable groups. All local navigation targets are relative to each HTML page, avoiding root-only URL assumptions.

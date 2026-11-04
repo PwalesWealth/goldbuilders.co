@@ -1,0 +1,12 @@
+GoldBuilders Packages / Subsidiaries Navigation Correction — Validation
+
+HTML pages checked: 61
+Pages using the shared primary navigation: 57
+Every shared primary navigation has exactly one Packages dropdown and one separate Subsidiaries dropdown.
+Packages menu items: exactly four — Nexora Business-in-a-box; Strategy and Transformation services; Leadership and Talent Programs; Executive Strategy Session.
+Subsidiaries menu groups: exactly four — GoldBuilders Co.; LuxeStreams; Kohen; YIELD Global Impact.
+Each subsidiary group is controlled by an accessible button (`aria-expanded`, `aria-controls`) and lists its overview/initiatives in a nested sub-menu.
+All local navigation links across the 57 pages resolve successfully.
+JavaScript syntax checks passed for the main site script and portable shared-subsidiaries script.
+No backend or database schema changes were made.
+Not deployed; final visual review on real hosting/mobile device remains required.

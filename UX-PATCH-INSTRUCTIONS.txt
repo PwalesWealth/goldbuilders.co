@@ -1,0 +1,15 @@
+GOLDBUILDERS CO. MOBILE-FIRST UX PATCH
+
+Merge the included public/ directory into the existing website, preserving all unrelated files and existing server configuration. The patch adds a shared responsive carousel stylesheet and script, then updates existing public HTML pages to include them and render a three-slide image carousel after each current hero.
+
+Files added:
+- public/assets/css/ux-upgrade.css
+- public/assets/js/ux-upgrade.js
+- UX-MOBILE-FIRST-REDESIGN.md
+- UX-IMAGE-SOURCES.md
+
+Existing public HTML files updated:
+- 51 public content pages receive three image slides plus shared CSS/JS references.
+- Admin Login and Admin Dashboard are intentionally unchanged.
+
+Do not replace .env, database files, node_modules, or the production database. No database migration is needed. Images are loaded from Pexels and require visitor internet connectivity.

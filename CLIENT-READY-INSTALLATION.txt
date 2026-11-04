@@ -1,0 +1,31 @@
+GOLDBUILDERS CLIENT-READY REFERRAL & CHECKOUT UPDATE
+
+PATCH INSTALLATION
+1. Back up the live website/application folder and production SQLite database.
+2. Extract the ZIP into the application root (the folder containing server.js), allowing files to overwrite their matching paths.
+3. Preserve the existing .env file, database files, private uploads and hosting credentials. Do not replace them with sample files.
+4. Restart the Node.js application. server.js will add the new partner_type column to an existing referral_partners table when it starts.
+5. Test:
+   - /referral-partner.html
+   - /referral-partner/
+   - /become-a-referral-partner/
+   - /subsidiaries/luxestreams.html
+   - /subsidiaries/bemore.html
+   - /admin/dashboard.html (must redirect to login when not authenticated)
+
+WHAT CHANGED
+- Referral registration now supports Affiliate Marketer, Reseller and Independent Sales Representative roles.
+- Each partner receives a unique code and 49 offer-specific tracked links.
+- The partner type is recorded in the protected admin referral register.
+- LuxeStreams and BeMore price cards are selectable and support a combined multi-service checkout request.
+- Referral buttons are placed immediately after the price cards, not in the footer.
+- Proof of Work notes and client-facing backend implementation language have been removed or reworded.
+- LuxeStreams credit card shows no-charge initial pathway discussion and lender-disclosed processing / disbursement charges; no arbitrary LuxeStreams percentage has been invented.
+
+CHECKOUT NOTE
+The new basket submits an order/enquiry request; it does not take card or bank payment automatically. Your team confirms availability and variable fees, then sends the approved payment instruction. A payment gateway integration is separate.
+
+REFERRAL COMMISSION NOTE
+Partner links track referrals. Commission rates and payment require an approved Referral Partner Agreement and manual sale verification. Credit / loan referral commission remains disabled unless required regulatory approval and written partner terms are in place.
+
+This patch was prepared and locally validated. It has not been deployed to your live hosting account.

@@ -1,0 +1,476 @@
+{
+  "vendare": {
+    "title": "Vendare",
+    "tag": "Augmented Supply Chain & Distribution Logistics",
+    "headline": "Smarter Logistics. Better Visibility. Lower Friction.",
+    "description": "Vendare by Luxe Logistics is positioned as an augmented supply chain management and distribution logistics company using integrated technology to streamline logistics operations, improve efficiency and reduce costs.",
+    "audience": "Manufacturers, distributors, retailers, importers, logistics operators and businesses managing complex physical supply chains.",
+    "features": [
+      "Real-time logistics and shipment visibility",
+      "Automated workflow support across supply-chain operations",
+      "Data analytics for operational performance",
+      "Technology-enabled coordination across logistics activities",
+      "Efficiency and cost-reduction focus"
+    ],
+    "outcomes": [
+      "More visibility across movement of goods",
+      "Faster identification of exceptions and bottlenecks",
+      "More disciplined operational workflows",
+      "Better decision support through logistics data",
+      "A foundation for scalable distribution operations"
+    ],
+    "related": [
+      "integrius",
+      "manajar",
+      "dirent-africa"
+    ]
+  },
+  "manajar": {
+    "title": "ManaJAR",
+    "tag": "Hospitality & Event Management",
+    "headline": "Discover. Book. Manage. Experience Better Hospitality.",
+    "description": "ManaJAR is a hospitality and event management startup positioned as a customer-facing platform for discovering, booking and managing hospitality and event services.",
+    "audience": "Hospitality customers, event-goers, event planners, venues, service providers, experience operators and partners.",
+    "features": [
+      "Hospitality and event discovery",
+      "Service and venue booking",
+      "Booking and service management",
+      "Technology-enabled recommendations",
+      "Streamlined booking workflows",
+      "Exclusive deals and discounts"
+    ],
+    "outcomes": [
+      "Simpler discovery and booking journeys",
+      "Better visibility for hospitality and event providers",
+      "Personalized recommendations",
+      "More convenient service management",
+      "New opportunities for provider partnerships and customer loyalty"
+    ],
+    "related": [
+      "genie",
+      "dirent-africa",
+      "integrius"
+    ]
+  },
+  "genie": {
+    "title": "gEnie",
+    "tag": "AI-Powered Retail Shopping Concierge",
+    "headline": "A Smarter Shopping Companion for African Consumers.",
+    "description": "gEnie is positioned as an AI-powered retail shopping concierge that helps African consumers discover, compare and purchase products from growing retail networks.",
+    "audience": "African consumers, retailers, brands and commerce partners looking for a more intelligent discovery and purchase experience.",
+    "features": [
+      "AI-assisted product discovery",
+      "Product comparison support",
+      "Retailer and product recommendations",
+      "Personalized shopping journeys",
+      "Streamlined purchase discovery",
+      "Exclusive deals and discounts"
+    ],
+    "outcomes": [
+      "Less friction in product discovery",
+      "More personalized recommendations",
+      "Better comparison before purchase",
+      "Increased visibility for participating retailers",
+      "A stronger bridge between consumers and retail supply"
+    ],
+    "related": [
+      "manajar",
+      "integrius",
+      "skeelup-africa"
+    ]
+  },
+  "dirent-africa": {
+    "title": "DiRent Africa",
+    "tag": "Augmented Rental Services",
+    "headline": "Reimagining Rental Experiences Across Africa.",
+    "description": "DiRent Africa is positioned as a platform for seamless, technology-enabled rental services in Africa, designed to enhance quality of life for individuals and businesses.",
+    "audience": "Individuals, businesses, property and asset owners, renters and service partners.",
+    "features": [
+      "Augmented rental service experience",
+      "Digital discovery and matching",
+      "Convenience-focused rental journeys",
+      "Technology-enabled service coordination",
+      "Potential for richer data and decision support"
+    ],
+    "outcomes": [
+      "A more convenient rental experience",
+      "Improved access to rental opportunities",
+      "Better coordination between owners and users",
+      "A platform foundation for scalable rental services",
+      "More transparent and structured interactions"
+    ],
+    "related": [
+      "vendare",
+      "manajar",
+      "genie"
+    ]
+  },
+  "clinbox": {
+    "title": "ClinBox",
+    "tag": "Healthcare Technology & Decentralization",
+    "headline": "Connecting People to More Accessible Healthcare Services.",
+    "description": "ClinBox — represented as OctaCare in the supplied ecosystem roadmap image — is positioned as a health-tech platform focused on healthcare decentralization and connections between patients and healthcare providers.",
+    "audience": "Patients, healthcare providers, pharmacies, health-service operators, support organizations and ecosystem partners.",
+    "features": [
+      "Patient-to-provider connection",
+      "Access pathways for drugs and health products",
+      "Healthcare consultation access",
+      "Health administration support",
+      "Financial-support pathways within the ecosystem",
+      "Technology-enabled healthcare coordination"
+    ],
+    "outcomes": [
+      "Improved access and discovery of healthcare services",
+      "Stronger connections between patients and providers",
+      "More coordinated healthcare journeys",
+      "A platform foundation for decentralized healthcare delivery",
+      "Potential for integrated health-service partnerships"
+    ],
+    "related": [
+      "integrius",
+      "genie",
+      "skeelup-africa"
+    ]
+  },
+  "integrius": {
+    "title": "Integrius",
+    "tag": "Supply Chain Management & Online Payments",
+    "headline": "Connect Supply Chains, Payments and Business Operations.",
+    "description": "Integrius is positioned as a supply chain management and online payment system that enables businesses to manage supply chains, track shipments and make payments securely and efficiently.",
+    "audience": "Businesses, suppliers, distributors, merchants, logistics operators and organizations managing multi-party transactions.",
+    "features": [
+      "Supply-chain management",
+      "Shipment tracking and real-time visibility",
+      "Online payment workflows",
+      "Automated operational processes",
+      "Data analytics for supply-chain optimization",
+      "Integrated visibility across commercial activities"
+    ],
+    "outcomes": [
+      "Greater supply-chain visibility",
+      "More efficient transaction workflows",
+      "Improved shipment coordination",
+      "Better operational decision-making through data",
+      "A stronger connection between logistics and payment activities"
+    ],
+    "related": [
+      "vendare",
+      "genie",
+      "manajar"
+    ]
+  },
+  "kohen": {
+    "title": "Kohen",
+    "tag": "Data-AI Powered ERP Technology Company",
+    "headline": "An Innovation Engine for the Next Generation of Enterprise Systems.",
+    "description": "Kohen sits above the venture roadmap as the data-AI powered ERP technology ambition connecting business systems, intelligence and ecosystem ventures.",
+    "audience": "Growing enterprises, SMEs, technology partners, ecosystem ventures and organizations seeking integrated data and AI-enabled business systems.",
+    "features": [
+      "Data-centered enterprise architecture",
+      "AI-enabled business intelligence and workflows",
+      "ERP-oriented operating systems",
+      "Cross-venture integration potential",
+      "Decision support and automation",
+      "Technology foundation for scalable ecosystem businesses"
+    ],
+    "outcomes": [
+      "Better connected business systems",
+      "More accessible operational intelligence",
+      "Automation opportunities across enterprise workflows",
+      "A common technology foundation for ecosystem ventures",
+      "A platform for future data and AI products"
+    ],
+    "related": [
+      "integrius",
+      "genie",
+      "dirent-africa"
+    ]
+  },
+  "skeelup-africa": {
+    "title": "SkeelUP Africa",
+    "tag": "Education Technology & Workforce Skills",
+    "headline": "Practical Skills for the Modern World of Work.",
+    "description": "SkeelUP Africa is the ecosystem's practical skills and career-development platform, with pathways around digital work, analytics, virtual assistance, social media management, project management and remote-work capability.",
+    "audience": "Students, professionals, entrepreneurs, job seekers and career switchers.",
+    "features": [
+      "Data analytics pathways",
+      "Virtual assistant skills",
+      "Social media management",
+      "Project management",
+      "Remote Work Bootcamp",
+      "Career and capability development"
+    ],
+    "outcomes": [
+      "Practical digital skills",
+      "Portfolio and work-readiness opportunities",
+      "Improved remote-work capability",
+      "Stronger career confidence and positioning",
+      "An accessible pathway into modern digital work"
+    ],
+    "related": [
+      "genie",
+      "clinbox",
+      "integrius"
+    ]
+  },
+  "luxestreams": {
+    "title": "LuxeStreams Concierge",
+    "type": "Core Brand / Concierge",
+    "page": "subsidiaries/luxestreams.html"
+  },
+  "bemore": {
+    "title": "BeMore Coaching Company",
+    "type": "Core Brand / High-Performance People",
+    "page": "subsidiaries/bemore.html"
+  },
+  "yield_global_impact": {
+    "title": "YIELD Global Impact",
+    "tag": "Youth Initiative Empowerment and Leadership Development",
+    "headline": "Develop leaders who multiply transformation.",
+    "description": "YIELD Global Impact is a youth empowerment, leadership development and ecosystem activation platform. Its long-term ambition is to reach one billion young people through one million transformation leaders.",
+    "audience": "Young people, emerging leaders, campuses, communities, organisations, ministries, civic partners and collaborators working to expand leadership and opportunity.",
+    "features": [
+      "Youth empowerment and leadership development initiatives",
+      "Fellowship and mentoring pathways",
+      "Community, campus and organisation-based activation",
+      "Learning, service and impact programme design",
+      "GEI Trust as the cross-ecosystem talent, ecosystem and innovation management platform anchoring LeaderSHIFT activations across GoldBuilders Co. and YIELD Global Impact"
+    ],
+    "outcomes": [
+      "Equip people to grow into transformation leaders who can develop others.",
+      "Connect campuses, communities and organisations through purposeful programmes and local partnerships.",
+      "Help young people connect their abilities and aspirations to practical learning, service and opportunities."
+    ],
+    "related": [
+      "yield-global-fellowship",
+      "school-of-impact",
+      "next-community",
+      "the-driven-life",
+      "mentorship_matters",
+      "wecare-foundation",
+      "next-missions",
+      "gei_trust"
+    ],
+    "page": "ecosystem/yield-global-impact.html",
+    "type": "YIELD Global Impact Initiative"
+  },
+  "yield_global_fellowship": {
+    "title": "YIELD Global Fellowship",
+    "tag": "Leadership · Fellowship · Activation",
+    "headline": "Build leaders through fellowship, learning and action.",
+    "description": "YIELD Global Fellowship is the fellowship pathway within YIELD Global Impact. It connects leadership formation with community, peer learning and practical activation, including the LeaderSHIFT Tour and related gatherings.",
+    "audience": "Young leaders, emerging professionals, campus leaders, community builders and collaborators seeking a purposeful leadership and service community.",
+    "features": [
+      "Fellowship and peer-community pathways",
+      "Leadership conversations and development experiences",
+      "Participation in relevant YIELD activations",
+      "Cross-community collaboration and partnership opportunities"
+    ],
+    "outcomes": [
+      "Build reflective, responsible and purpose-led leadership habits.",
+      "Create space for relationships, peer learning, mentoring and collaboration.",
+      "Turn shared learning into local programmes, service and opportunities to lead."
+    ],
+    "related": [
+      "yield-global-impact",
+      "school-of-impact",
+      "next-community"
+    ],
+    "page": "ecosystem/yield-global-fellowship.html",
+    "type": "YIELD Global Impact Initiative"
+  },
+  "school_of_impact": {
+    "title": "School of Impact",
+    "tag": "Learning · Capability · Social Impact",
+    "headline": "Learn with purpose. Turn capability into impact.",
+    "description": "School of Impact is a learning and action platform in the YIELD Global Impact network, designed to connect personal capability, leadership development and purposeful community contribution.",
+    "audience": "Young leaders, project teams, social innovators, volunteers and organisations building capability for meaningful community outcomes.",
+    "features": [
+      "Learning pathways for leadership and impact capability",
+      "Workshops, guided learning and project-based experiences",
+      "Opportunities to connect learning with community activity",
+      "Partnership pathways for facilitators and organisations"
+    ],
+    "outcomes": [
+      "Structure learning around real situations and the capabilities participants need.",
+      "Encourage participants to apply what they learn through projects, service or community initiatives.",
+      "Support review of lessons, participation and the next actions required."
+    ],
+    "related": [
+      "yield-global-impact",
+      "yield-global-fellowship",
+      "next-community"
+    ],
+    "page": "ecosystem/school-of-impact.html",
+    "type": "YIELD Global Impact Initiative"
+  },
+  "next_community": {
+    "title": "Inspire Generation NEXT · NEXT Community",
+    "tag": "Youth Community · Leadership · Opportunity",
+    "headline": "Create the next generation of builders and leaders.",
+    "description": "Inspire Generation NEXT and NEXT Community are youth-facing community pathways associated with YIELD Global Impact. They connect young people with leadership development, peer networks, purposeful experiences and opportunities to contribute.",
+    "audience": "Students, young professionals, campus communities, emerging creators and young people exploring their next step in leadership and personal growth.",
+    "features": [
+      "Youth community gatherings and development experiences",
+      "Campus and community activation opportunities",
+      "Leadership conversations and peer connection",
+      "Connections to fellowship, learning and impact programmes"
+    ],
+    "outcomes": [
+      "Help participants clarify their interests, strengths and direction.",
+      "Build constructive peer connections and shared learning.",
+      "Create pathways to participate in events, service and community initiatives."
+    ],
+    "related": [
+      "yield-global-impact",
+      "yield-global-fellowship",
+      "school-of-impact",
+      "the-driven-life"
+    ],
+    "page": "ecosystem/next-community.html",
+    "type": "YIELD Global Impact Initiative"
+  },
+  "the_driven_life": {
+    "title": "The Driven Life · 10X Community",
+    "tag": "Lifestyle · Community · Fitness · Food · Travel",
+    "headline": "A more intentional life, lived together.",
+    "description": "The Driven Life Community, also known as the 10X Community, is a community of BeMore Coaching Company. It fosters continuous 10X growth across personal and professional development, with a focus on healthy living, high performance and productivity in life, business and career. Members connect through learning, fitness, food, travel, relationships and shared experiences.",
+    "audience": "Young adults, professionals, entrepreneurs, friends and community members seeking intentional personal and professional growth, high performance, productivity, a healthy lifestyle and meaningful shared experiences.",
+    "features": [
+      "Monthly webinars and weekly workshops",
+      "10X meetups, seminars and conferences",
+      "Fitness hangouts, wellbeing activities and community challenges",
+      "Food-centred gatherings and local experiences",
+      "Hangouts, trips and travel experiences when announced",
+      "Access to most free BeMore Coaching Company subscriber training and resources",
+      "The Growth Lab WhatsApp channel for personal, professional and spiritual growth, entrepreneurship and career-development resources, and opportunity updates for professionals, SMEs and business owners"
+    ],
+    "outcomes": [
+      "Support continuous growth in personal and professional development.",
+      "Build healthy lifestyle, high-performance and productivity habits across life, business and career.",
+      "Connect participants through learning, fitness, food, travel and shared community experiences."
+    ],
+    "related": [
+      "yield-global-impact",
+      "next-community",
+      "yield-global-fellowship"
+    ],
+    "page": "ecosystem/the-driven-life.html",
+    "type": "YIELD Global Impact Initiative",
+    "growth_lab_channel": "https://whatsapp.com/channel/0029Vajjko20rGiI32CBS145"
+  },
+  "wecare_foundation": {
+    "title": "WeCare Foundation",
+    "tag": "Community Care · Social Support · Collaboration",
+    "headline": "Connect care with practical community support.",
+    "description": "WeCare Foundation is the community-care initiative in the YIELD Global Impact network. It provides a platform for care-oriented initiatives and collaboration around community needs, with each programme defined by its scope, partners and participation criteria.",
+    "audience": "Community members, volunteers, service partners, donors and organisations interested in supporting practical community-care initiatives.",
+    "features": [
+      "Community-care and social-support initiatives when announced",
+      "Partner and volunteer participation pathways",
+      "Community needs discovery and programme coordination",
+      "Collaboration with organisations working toward social good"
+    ],
+    "outcomes": [
+      "Start from clearly identified needs and the realities of the people a programme is intended to serve.",
+      "Coordinate with suitable partners and volunteers around a defined programme.",
+      "Communicate the scope, eligibility, resources and outcomes of each initiative clearly."
+    ],
+    "related": [
+      "yield-global-impact",
+      "school-of-impact",
+      "next-missions"
+    ],
+    "page": "ecosystem/wecare-foundation.html",
+    "type": "YIELD Global Impact Initiative"
+  },
+  "next_missions": {
+    "title": "Marketplace Ministry · NEXT Missions",
+    "tag": "Faith · Finance · Friendship · Marketplace Impact",
+    "headline": "Faith that serves. Leadership that makes a difference.",
+    "description": "The Marketplace Ministry Network / NEXT Missions is a praying community for people who desire to grow spiritually and build a relationship with God through His Son Jesus, with the help of the Holy Spirit, through the Word and prayer. It brings intercessors, Christian executives, entrepreneurs and professionals together to connect faith with work, leadership, prosperity, the prophetic and service in the marketplace.",
+    "audience": "People who desire spiritual growth and prayer, including Christian executives, entrepreneurs, professionals, marketplace leaders, intercessors, missionaries, churches and ministry partners.",
+    "features": [
+      "Friday Weekly Prayer Series — Second Watch Hour",
+      "90 Days Moment of Change Midnight Prayers — Third Watch Hour; annual October digital-detox and spiritual-growth bootcamp",
+      "365 Days of Glory Midnight Prayers — 3:00 AM, Fourth Watch Hour",
+      "Monthly Missionaries Transformation Week discipleship bootcamps",
+      "Marketplace community and executive fellowship",
+      "CEOs Lounge conversations around Faith, Finance and Friendship",
+      "Mission and service activation with relevant partners"
+    ],
+    "outcomes": [
+      "Create a community for spiritual growth through the Word, prayer and fellowship.",
+      "Encourage intercession and the integration of Christian faith and values into the marketplace.",
+      "Prepare participants for purposeful Christian living, leadership and missions through discipleship."
+    ],
+    "related": [
+      "yield-global-impact",
+      "yield-global-fellowship",
+      "school-of-impact"
+    ],
+    "page": "ecosystem/next-missions.html",
+    "type": "YIELD Global Impact Initiative"
+  },
+  "gei_trust": {
+    "title": "GEI Trust",
+    "full_name": "Global Epicentre Innovation Trust",
+    "tag": "Talent · Ecosystem Management · Innovation · Institution Building",
+    "headline": "Build the ecosystem. Develop the leaders. Deliver the impact.",
+    "description": "GEI Trust is the talent, ecosystem and innovation management platform coordinating people-development, business-growth, digital-transformation, fellowship, community and impact initiatives. It exists to build high-performance people, businesses and ecosystems capable of creating measurable global impact, income and influence.",
+    "vision": "To build a globally connected institution and ecosystem platform that develops high-performance people, businesses and communities, and multiplies transformational leadership and innovation across Africa and the world.",
+    "mission": "To identify, develop, connect and steward talent, organisations, innovation and impact initiatives through strategy, ecosystem management, leadership development, partnerships and accountable execution — creating measurable global impact, income and influence.",
+    "audience": "Talent, executives, entrepreneurs, professionals, ecosystem companies, emerging leaders, campuses, communities, faith and marketplace networks, institutional partners and collaborators.",
+    "features": [
+      "Ecosystem design, portfolio coordination and institutional development",
+      "Talent identification, leadership development and workforce capability",
+      "Business growth, digital transformation and innovation management",
+      "Programme architecture, activation and delivery coordination",
+      "Strategic partnerships, community engagement and resource mobilisation",
+      "Governance, performance scorecards, learning and impact documentation",
+      "LeaderSHIFT Tours and LeaderSHIFT Conference platform, including the 2030 California flagship ambition"
+    ],
+    "outcomes": [
+      "More coherent and accountable ecosystems",
+      "High-performance leaders, teams and ventures",
+      "Stronger cross-ecosystem collaboration and partnerships",
+      "Programmes connected to defined outcomes and impact evidence",
+      "A durable leadership movement building toward LeaderSHIFT Conference 2030 in California"
+    ],
+    "related": [
+      "yield-global-impact",
+      "yield-global-fellowship",
+      "kohen"
+    ],
+    "page": "ecosystem/gei-trust.html",
+    "type": "Cross-Ecosystem Institution"
+  },
+  "mentorship_matters": {
+    "title": "MentorshipMatters Bootcamp",
+    "tag": "Career Mapping · Clarity Clinics · Mentorship Access",
+    "headline": "Be the mentor you wish you had.",
+    "description": "MentorshipMatters Bootcamp is a YIELD Global Impact initiative focused on guiding, empowering and unlocking potential in indigent children, teenagers and young adults across different fields of life interests. Its programme model brings together career mapping, clarity clinics and access to mentors to help participants gain direction and take practical next steps.",
+    "audience": "Children, teenagers and young adults seeking career direction, guidance and mentorship; parents and guardians; professionals willing to mentor; schools, community organisations and partners.",
+    "features": [
+      "Career mapping to explore interests, strengths and possible learning or work pathways",
+      "Clarity clinics for questions about education, skills, career choices and personal development",
+      "Mentorship access and guided conversations with professionals and practitioners across fields",
+      "Mentor participation and orientation pathways",
+      "School, community and institutional partnership opportunities"
+    ],
+    "outcomes": [
+      "Help participants build greater clarity about their interests, strengths and possible pathways.",
+      "Translate guidance into a practical personal development or career direction map.",
+      "Create access to informed mentorship, role models, learning opportunities and relevant next steps."
+    ],
+    "related": [
+      "yield-global-impact",
+      "yield-global-fellowship",
+      "school-of-impact",
+      "next-community",
+      "the_driven_life"
+    ],
+    "page": "ecosystem/mentorship-matters.html",
+    "type": "YIELD Global Impact Initiative"
+  }
+}

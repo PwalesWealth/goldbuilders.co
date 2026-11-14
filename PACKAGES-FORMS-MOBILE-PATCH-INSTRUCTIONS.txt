@@ -1,0 +1,13 @@
+GoldBuilders Packages / Subsidiaries Navigation Correction Patch
+
+Apply this patch to the latest GoldBuilders_Packages_Venture_Forms_Mobile_Upgrade.zip package. Preserve all relative file paths and overwrite files in the project root. The patch restores a distinct Packages dropdown and adds a distinct Subsidiaries dropdown with four click-to-expand subsidiary groups.
+
+Deployment checklist:
+1. Back up the current website directory and SQLite database.
+2. Extract this ZIP into the existing project root, preserving directories.
+3. Restart the Node.js service after updating files. No server.js or database schema change is required for this navigation correction.
+4. On desktop, open Packages and confirm it contains only the four offers. Open Subsidiaries and expand each of its four groups.
+5. Repeat the menu checks at a narrow mobile viewport; confirm the menus stack vertically and child groups expand by tap.
+6. Verify enquiry forms still submit correctly.
+
+This patch does not deploy the site to hosting.

@@ -1,0 +1,22 @@
+GOLDBUILDERS TAB FAVICON FIX
+
+This patch makes favicon discovery explicit at the domain root.
+
+WHAT CHANGED
+- server.js now has explicit GET /favicon.ico and GET /favicon.png routes before static middleware.
+- All 65 HTML pages use the same root-absolute favicon declarations.
+- Favicon cache version changed to 20261031-tabfix3.
+
+INSTALL INTO AN EXISTING NODE.JS DEPLOYMENT
+1. Back up your current application folder.
+2. Extract this patch into the application root (the folder containing server.js).
+3. Merge/overwrite server.js and the included public folder.
+4. Do NOT overwrite .env or the production data directory/database.
+5. Restart the Node.js application from your hosting control panel.
+6. Test https://YOUR-DOMAIN/favicon.ico and https://YOUR-DOMAIN/favicon.png
+7. Open the homepage in a private/incognito window. Close and reopen old tabs if needed.
+
+IMPORTANT
+The site must be hosted at the domain root for these root-absolute paths (/favicon.ico and /assets/...).
+If the app is mounted under a URL prefix such as /goldbuilders/, the app needs a configured base path and the references must use that prefix.
+The favicon cannot appear in a live browser tab until this patch is uploaded to the live server and the app restarted.

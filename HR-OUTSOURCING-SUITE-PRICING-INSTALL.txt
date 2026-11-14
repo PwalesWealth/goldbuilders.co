@@ -1,0 +1,9 @@
+GOLDBUILDERS HR OUTSOURCING SUITE PRICING UPDATE
+
+Changed files:
+- public/services.html
+- public/nexora-solutions.html
+
+To apply to an existing deployment, merge/overwrite these two files in the existing public folder. No server, database, .env or schema changes are required. Restart/reload the site and clear browser cache.
+
+The complete package also includes HR-OUTSOURCING-SUITE-PRICING.md with the fee basis and exclusions.

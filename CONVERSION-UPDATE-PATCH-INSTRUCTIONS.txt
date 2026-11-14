@@ -1,0 +1,24 @@
+GOLDBUILDERS CO. — CONVERSION UPDATE PATCH
+
+What this patch includes
+- Homepage and service-page conversion pathways, solution finder and clearer calls to action
+- Service-specific prefilled enquiry links
+- Consultation date/time preferences stored with existing contact lead records (not live calendar reservations)
+- Improved transformation assessment input/progress flow and a print / Save as PDF result view
+- Privacy-conscious conversion event hooks that do not include personal form values
+- Static visuals on high-intent pages in place of repeated carousels; existing showcase/editorial imagery retained
+- Case-study cards clearly labelled as illustrative engagement blueprints, not verified client results
+
+Apply
+1. Back up the current website files and production database first.
+2. Extract this ZIP at the application root, merging the included public/ files and server.js with the current project.
+3. Preserve your production .env and database. Do not replace them with example or empty files.
+4. Install dependencies only if your current deployment does not already have them, then restart the Node.js application.
+5. Test /api/health, contact form saving and notifications, Nexora consultation, assessment submission/result, WhatsApp links, and mobile pages over HTTPS.
+
+Important
+- The existing homepage headline is intentionally preserved verbatim.
+- Preferred appointment date/time is a request only. It is not checked against live availability; the team must confirm manually. Live slots, calendar synchronization and automated reminders require an account and booking URL from a calendar provider.
+- Print / Save as PDF opens the browser's print dialogue. The visitor can choose Save as PDF; the website does not email a PDF.
+- Analytics hooks do not send anything to an external analytics provider unless you configure one. They send event names and limited page/form context, never names, email addresses, phone numbers or free-text form responses.
+- Case-study entries are identified as illustrative examples; no fictional client success metrics or testimonials were added.

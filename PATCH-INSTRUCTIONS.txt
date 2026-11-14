@@ -1,0 +1,35 @@
+GOLDBUILDERS CO. WEBSITE UPDATE: REVENUE + ACCOUNTING + FINANCE SERVICES
+
+This additive update changes only:
+- public/nexora-solutions.html
+- public/services.html
+
+Merge these files into the existing deployment. Preserve all other pages, assets, the production .env file and database. No server changes or database migration are required.
+
+New revenue catalogue items are displayed with indicative starting prices. Confirm the proposed amounts internally before publishing. The existing selection total and WhatsApp consultation flow include selected new offers automatically.
+
+See FINANCE-ACCOUNTING-REVENUE-SOLUTION-UPDATE.md for the additions and pricing notes.
+
+--- Previous WhatsApp/mobile/image deployment notes ---
+
+GOLDBUILDERS CO. WEBSITE UPDATE: WHATSAPP + MOBILE READABILITY + IMAGES
+
+This is an additive update. It does not require a database migration.
+
+For a normal update deployment, merge these files into the existing website, preserving all other pages and the production .env/database:
+- public/assets/css/style.css
+- public/assets/js/main.js
+- public/index.html
+- public/nexora.html
+- public/nexora-solutions.html
+
+New reference notes:
+- WHATSAPP-AND-MOBILE-UPDATES.md
+- IMAGE-SOURCES.md
+
+WhatsApp target: +234 802 284 8749
+Business email: info@goldbuilders.co
+
+Existing database-backed submissions remain available. WhatsApp-direct buttons open a prefilled message and require the visitor to review and send it. A WhatsApp message does not create a database record; visitors can still use the normal form submit action to save an enquiry.
+
+The hero photos are loaded from the Pexels CDN, so visitors' browsers need internet access to load them. See IMAGE-SOURCES.md for source photo pages and licensing reference.

@@ -1,0 +1,102 @@
+{
+  "insights": [
+    {
+      "slug": "strategy-documents-to-strategic-execution",
+      "title": "From Strategy Documents to Strategic Execution",
+      "category": "Strategy",
+      "read": "7 min read",
+      "excerpt": "A strategy creates value only when it changes priorities, decisions, resource allocation and day-to-day behaviour.",
+      "url": "insights/strategy-documents-to-strategic-execution.html"
+    },
+    {
+      "slug": "high-performance-workforce",
+      "title": "The High-Performance Workforce",
+      "category": "People",
+      "read": "8 min read",
+      "excerpt": "High performance is designed through clear expectations, capable people, supportive systems and meaningful feedback.",
+      "url": "insights/high-performance-workforce.html"
+    },
+    {
+      "slug": "building-a-connected-revenue-engine",
+      "title": "Building a Connected Revenue Engine",
+      "category": "Revenue",
+      "read": "8 min read",
+      "excerpt": "Revenue performance improves when marketing, sales, service, delivery and finance operate as one connected system.",
+      "url": "insights/building-a-connected-revenue-engine.html"
+    },
+    {
+      "slug": "digital-transformation-without-digital-theatre",
+      "title": "Digital Transformation Without Digital Theatre",
+      "category": "Technology",
+      "read": "7 min read",
+      "excerpt": "Technology creates value when it improves a real decision, customer experience or operating outcome—not simply when it is launched.",
+      "url": "insights/digital-transformation-without-digital-theatre.html"
+    },
+    {
+      "slug": "leading-through-complexity",
+      "title": "Leading Through Complexity",
+      "category": "Leadership",
+      "read": "7 min read",
+      "excerpt": "When conditions change quickly, leaders need clarity of direction, transparent decisions and disciplined communication.",
+      "url": "insights/leading-through-complexity.html"
+    },
+    {
+      "slug": "innovation-as-an-operating-capability",
+      "title": "Innovation as an Operating Capability",
+      "category": "Innovation",
+      "read": "8 min read",
+      "excerpt": "Innovation becomes repeatable when ideas connect to customer problems, testable hypotheses and disciplined decisions.",
+      "url": "insights/innovation-as-an-operating-capability.html"
+    }
+  ],
+  "blogs": [
+    {
+      "slug": "what-high-performance-looks-like-in-practice",
+      "title": "What High Performance Looks Like in Practice",
+      "category": "Featured",
+      "read": "6 min read",
+      "excerpt": "High performance is the repeatable ability to deliver important outcomes—not a permanent state of busyness.",
+      "url": "blogs/what-high-performance-looks-like-in-practice.html"
+    },
+    {
+      "slug": "five-questions-every-growing-business-should-ask",
+      "title": "Five Questions Every Growing Business Should Ask",
+      "category": "Business",
+      "read": "7 min read",
+      "excerpt": "Growth is easier to manage when leaders regularly test customer value, economics, operating capacity, cash and focus.",
+      "url": "blogs/five-questions-every-growing-business-should-ask.html"
+    },
+    {
+      "slug": "why-capability-building-must-follow-strategy",
+      "title": "Why Capability Building Must Follow Strategy",
+      "category": "People",
+      "read": "6 min read",
+      "excerpt": "A strategy changes the work people must do. Learning must be designed around the capabilities the strategy requires.",
+      "url": "blogs/why-capability-building-must-follow-strategy.html"
+    },
+    {
+      "slug": "digital-transformation-starts-with-operating-model",
+      "title": "Digital Transformation Starts With the Operating Model",
+      "category": "Technology",
+      "read": "6 min read",
+      "excerpt": "Before buying technology, decide how work, decisions, data and accountability should operate in the future.",
+      "url": "blogs/digital-transformation-starts-with-operating-model.html"
+    },
+    {
+      "slug": "hidden-cost-of-fragmented-sales-process",
+      "title": "The Hidden Cost of a Fragmented Sales Process",
+      "category": "Revenue",
+      "read": "6 min read",
+      "excerpt": "Disconnected handoffs affect customer trust, forecast reliability, team productivity and cash conversion.",
+      "url": "blogs/hidden-cost-of-fragmented-sales-process.html"
+    },
+    {
+      "slug": "turning-skills-into-sustainable-value",
+      "title": "Turning Skills Into Sustainable Value",
+      "category": "Careers",
+      "read": "7 min read",
+      "excerpt": "Skills become commercially valuable when they solve a defined problem, produce visible outcomes and reach the right audience.",
+      "url": "blogs/turning-skills-into-sustainable-value.html"
+    }
+  ]
+}

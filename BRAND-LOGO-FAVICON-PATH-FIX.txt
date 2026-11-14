@@ -1,0 +1,20 @@
+GOLDBUILDERS BRAND MARK + FAVICON DISPLAY FIX
+
+What was corrected
+- Previous header-logo and favicon image references used root-absolute /assets/... URLs. These can fail when the site is mounted beneath a domain path or hosting subfolder.
+- All 65 HTML pages now use page-relative paths to the shared logo and icon assets.
+- Added public/favicon.ico at the public web root, plus 16px and 32px PNG icons and an Apple touch icon.
+- Added a new version query to icon URLs so browsers fetch the updated icons instead of reusing stale cached copies.
+- Cleaned the uploaded GB emblem to remove a detached gold fragment at the right edge.
+- Applied explicit visibility and responsive sizing rules for the desktop and mobile header logo.
+- Added the GB mark to the standalone Nexora header, LuxeStreams Club's GoldBuilders link, and Admin Login brand area. Admin Dashboard already uses the common GoldBuilders lockup.
+
+PATCH INSTALLATION — EXISTING WEBSITE
+1. Extract the patch into the GoldBuilders project root: the folder that contains server.js and the public/ directory.
+2. Merge/overwrite the included public/ files. Do not put the patch's public folder inside public/public or inside a nested assets folder.
+3. Preserve the live .env file and production database. No database migration is required.
+4. Restart the Node.js application.
+5. Open https://YOUR-DOMAIN/favicon.ico directly. It should display the gold GB mark.
+6. Hard-refresh the website. If the tab icon still appears old, close the site tab and reopen it; browser favicon caches can persist separately from normal page cache.
+
+This update changes branding paths and visual assets only. It does not alter application routes, forms, subscriptions, payments or database logic.

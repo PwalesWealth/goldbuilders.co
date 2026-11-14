@@ -1,0 +1,7 @@
+/* Context-specific contact enquiry routing */
+#contact-form .enquiry-context-note{color:#bdb8aa;font-size:.9rem;line-height:1.55;margin:.15rem 0 .2rem}
+#contact-form .enquiry-field.is-hidden{display:none!important}
+#contact-form select:focus,#contact-form input:focus,#contact-form textarea:focus{outline:2px solid rgba(214,170,73,.55);outline-offset:2px}
+#contact-form .enquiry-type-badge{display:inline-flex;align-items:center;gap:.45rem;border:1px solid rgba(214,170,73,.35);border-radius:999px;padding:.35rem .7rem;color:#e3bd69;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;margin:.15rem 0 .75rem}
+#contact-form .enquiry-type-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#d5a83f}
+@media(max-width:700px){#contact-form .form-grid{grid-template-columns:1fr}#contact-form .field.full{grid-column:1/-1}}

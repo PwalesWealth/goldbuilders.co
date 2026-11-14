@@ -1,0 +1,43 @@
+.gbs-opts{margin-top:16px;display:flex;flex-direction:column;gap:8px;text-align:left}
+.gbs-opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid rgba(212,175,55,.35);border-radius:12px;cursor:pointer;background:rgba(255,255,255,.03);color:inherit;transition:.15s}
+.gbs-opt:hover{border-color:#d4af37}
+.gbs-opt input{position:absolute;opacity:0;pointer-events:none}
+.gbs-tick{flex:none;width:22px;height:22px;border-radius:7px;border:2px solid rgba(212,175,55,.7);display:grid;place-items:center;font-size:.8rem;color:#17130a}
+.gbs-opt.on{background:rgba(212,175,55,.16);border-color:#d4af37}
+.gbs-opt.on .gbs-tick{background:#d4af37}.gbs-opt.on .gbs-tick::after{content:"✓";font-weight:900}
+.gbs-opt input:focus-visible+.gbs-tick{outline:2px solid #f2d675;outline-offset:2px}
+.gbs-lab{flex:1;display:flex;flex-direction:column;font-weight:700;line-height:1.3;font-size:.92rem}
+.gbs-lab small{font-weight:400;opacity:.7;font-size:.76rem}
+.gbs-opt b{font-size:.9rem;white-space:nowrap;color:#e8c458}
+.gbs-card.gbs-selected{outline:2px solid #d4af37;outline-offset:2px}
+.gbs-card[data-gbs-card]{cursor:default}
+.gbs-bar{position:fixed;z-index:1000;left:0;right:0;bottom:0;padding:12px 4%;background:rgba(10,10,10,.97);border-top:1px solid rgba(212,175,55,.4);backdrop-filter:blur(14px);transform:translateY(115%);transition:transform .25s;box-shadow:0 -10px 30px rgba(0,0,0,.4);font-family:inherit;color:#f4efe0}
+.gbs-bar.visible{transform:none}
+.gbs-bar-in{width:min(1200px,100%);margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.gbs-sum{display:flex;gap:18px;align-items:center;flex-wrap:wrap;font-size:.86rem}
+.gbs-sum strong{color:#f2d675;font-size:1rem}.gbs-sum b{color:#fff}
+.gbs-act{display:flex;gap:10px}
+.gbs-wa,.gbs-go,.gbs-sub{min-height:46px;padding:10px 18px;border:0;border-radius:12px;font:inherit;font-weight:800;cursor:pointer}
+.gbs-wa{background:#25d366;color:#07240f}.gbs-go,.gbs-sub{background:#d4af37;color:#17130a}
+.gbs-wa:hover,.gbs-go:hover,.gbs-sub:hover{filter:brightness(1.08)}
+body.gbs-has-bar{padding-bottom:92px}body.gbs-has-bar .global-wa-cta{bottom:104px!important}
+body.gbs-lock{overflow:hidden}
+.gbs-modal{position:fixed;inset:0;z-index:1100;background:rgba(0,0,0,.72);display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:4vh 4%}
+.gbs-modal.open{display:flex}
+.gbs-box{position:relative;width:min(640px,100%);background:#111;color:#f4efe0;border:1px solid rgba(212,175,55,.4);border-radius:18px;padding:26px;font-family:inherit}
+.gbs-box h3{margin:0 0 14px;color:#f2d675;font-size:1.3rem}
+.gbs-x{position:absolute;top:10px;right:14px;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+.gbs-line{display:grid;grid-template-columns:1fr auto auto auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.gbs-line small{display:block;opacity:.65;font-size:.78rem}
+.gbs-line input{width:64px;padding:6px;border-radius:8px;border:1px solid rgba(212,175,55,.4);background:#1b1b1b;color:#fff}
+.gbs-line button{background:none;border:0;color:#ff8b8b;font-size:1.3rem;cursor:pointer}
+.gbs-tot{display:flex;gap:22px;flex-wrap:wrap;margin:14px 0 6px}.gbs-tot span{opacity:.7;margin-right:6px}.gbs-tot b{color:#f2d675}
+.gbs-note{font-size:.8rem;opacity:.7;line-height:1.5}
+.gbs-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.gbs-form label{display:flex;flex-direction:column;gap:5px;font-size:.84rem;font-weight:600}
+.gbs-form input,.gbs-form textarea{padding:11px 12px;border-radius:10px;border:1px solid rgba(212,175,55,.35);background:#1b1b1b;color:#fff;font:inherit}
+.gbs-full{grid-column:1/-1}
+.gbs-btns{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.gbs-or{opacity:.6}
+.gbs-status{grid-column:1/-1;margin:0;font-size:.86rem;color:#f2d675}
+@media(max-width:620px){.gbs-bar-in{flex-direction:column;align-items:stretch}.gbs-act{flex-direction:column}.gbs-form{grid-template-columns:1fr}.gbs-line{grid-template-columns:1fr auto auto}.gbs-line input{grid-column:1}.gbs-btns .gbs-wa,.gbs-btns .gbs-sub{width:100%}body.gbs-has-bar{padding-bottom:170px}}
+.gbs-opt.single .gbs-lab small{display:none}.gbs-opt.single b{white-space:normal;text-align:right}
